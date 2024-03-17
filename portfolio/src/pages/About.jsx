@@ -49,42 +49,76 @@ hiddenElements2.forEach(element => {
         </svg>
       </div>
       <div className='icons-left'>
-        <div class="icon hiding">
-          <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/html.png" alt="" />
         </div>
-        <div className="icon hiding">
-          <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/css3.png" alt="" />
         </div>
-        <div className="icon hiding">
-          <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/javascript.png" alt="" />
         </div>
-        <div className="icon hiding">
-          <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/JavaScript-logo.png" alt="" />
+        </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/Webpack.png" alt="" />
+        </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/react.png" alt="" />
+        </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/Figma.png" alt="" />
+        </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/TailwindCSS.png" alt="" />
+        </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/Bootstrapnew.png" alt="" />
         </div>
       </div>
       <div className="icons-right hiding">
-            <p>testing</p>
+            <p>Front end</p>
       </div>
     </div>
 
     <div className="icons icon-container orange-bkgrnd">
-      <div className="waves-blue">
+    <div className="waves-blue">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
         </svg>
       </div>
-      <div class="icon hiding">
-        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+      <div className="icons-left hiding2">
+            <p>back end</p>
       </div>
-      <div className="icon hiding">
-        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+      <div className='icons-right'>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/Insomnia.png" alt="" />
+        </div>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/jquery.png" alt="" />
+        </div>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/mongodb.png" alt="" />
+        </div>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/Mongoose.js.png" alt="" />
+        </div>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/mysql.png" alt="" />
+        </div>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/sequelize.png" alt="" />
+        </div>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/nodejs (1).png" alt="" />
+        </div>
+        <div className="icon hiding2 techlogo">
+          <img src="/images/logos/Vite.js.png" alt="" />
+        </div>
+        
       </div>
-      <div className="icon hiding">
-        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
-      </div>
-      <div className="icon hiding">
-        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
-      </div>
+     
     </div>
   </div>
 );

@@ -19,7 +19,8 @@
 }
 
 .blue-bkrnd{
-    background-color: var(--blue);
+    background: rgb(49,211,221);
+    background: linear-gradient(184deg, rgba(49,211,221,1) 0%, rgba(60,49,221,1) 35%, rgba(60,49,221,1) 100%);
     
 }
 
@@ -28,7 +29,8 @@
 }
 
 .orange-bkgrnd{
-    background-color: var(--orange);
+    background: rgb(60,49,221);
+    background: linear-gradient(174deg, rgba(60,49,221,1) 0%, rgba(221,125,49,1) 35%, rgba(221,125,49,1) 100%);
 }
 
 body {
@@ -95,12 +97,21 @@ overflow-x: hidden
     flex: 1;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .icons-right {
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
+.techlogo {
+    height: 145px;
+    width: 145px;
+    margin: 30px;
+}
   
 
 .blob-effect {
@@ -164,6 +175,7 @@ overflow-x: hidden
         font-size: 2rem;
         margin-top: 100px;
     }
+
 .icon-container {
     display: flex;
     justify-content: center;
