@@ -76,6 +76,15 @@ hiddenElements2.forEach(element => {
         <div className="icon hiding techlogo">
           <img src="/images/logos/Bootstrapnew.png" alt="" />
         </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/handlebars.png" alt="" />
+        </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/netlify.png" alt="" />
+        </div>
+        <div className="icon hiding techlogo">
+          <img src="/images/logos/Heroku.png" alt="" />
+        </div>
       </div>
       <div className="icons-right hiding">
             <p>Front end</p>
