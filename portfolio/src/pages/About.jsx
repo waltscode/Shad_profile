@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
+import {useTheme} from '../components/ui/theme-provider'
 import '../assets/css/styles.css'
 
 export default function About() {
+    const { theme } = useTheme();
+    
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -32,7 +35,7 @@ hiddenElements2.forEach(element => {
   }, []);
 
   return (
-    <div id="about">
+    <div id="about" className={`app-container ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
     <div className="bkg-container flex-container">
       <div className="hero-left hiding">
         <h1 className='blu hero-text'>Name: John Walters </h1>
