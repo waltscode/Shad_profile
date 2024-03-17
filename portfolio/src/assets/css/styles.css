@@ -1,7 +1,10 @@
 :root {
     --eggshell: #FFFAF9;
     --purple:#6610f2;
-    
+    --blue: #3c31dd;
+    --red:#dd3f31;
+    --pink:#dd31d1;
+    --orange:#DD7D31;
  }
 .egg{
     color: var(--eggshell);
@@ -10,32 +13,55 @@
     color: var(--purple);
 }
 
+.blu{
+    color: var(--blue);
+
+}
+
+.blue-bkrnd{
+    background-color: var(--blue);
+    
+}
+
+.red-bkgrnd{
+    background-color: var(--red);
+}
+
+.orange-bkgrnd{
+    background-color: var(--orange);
+}
+
 body {
-background-image:url('../../images/bkgrnd.png') ;
+background-color: var(--eggshell);
 background-size: cover;
 margin: 0;
 padding: 0;
 font-family: Outfit, sans-serif;
+overflow-x: hidden
 }
 
-section {
-    display: grid;
-    place-items: center;
-    align-items: center;
-    min-height: 100vh;
-}  
 
 .prof-img {
    justify-content: flex-end;
-   margin: 300px;
+   /* margin: 300px; */
+   
 }
 
 .hiding {
    opacity: 0;
    filter: blur(5px);
    transform: translateX(-100%);
-   transition: all 1s;
+   transition: all 2s;
 }
+
+
+
+.hiding2 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+ }
 
 .hiding-portfolios {
     opacity: 0;
@@ -49,13 +75,41 @@ section {
    filter:blur(0);
    transform: translateX(0);
 }
+/* spacing section */
+.flex-container {
+    display: flex;
+    
+  }
+  
+  .hero-left {
+    flex: 1;
+    
+  }
+  
+  .hero-right {
+    flex: 1;
+   
+  }
+
+  .icons-left {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .icons-right {
+    flex: 1;
+  }
+
+  
 
 .blob-effect {
    
     height: 380px;
     background-size: cover;
     background-position: center center;
-    margin: 200px;
+    margin: 100px;
+    
     box-shadow: 5px 5px 5px 5px rgba(13, 110, 253, 0.3);
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
@@ -74,8 +128,9 @@ section {
 .icons {
     display: flex;
     width: 100%; /* Example width */
-    max-width: 1200px; /* Example max-width */
+     /* Example max-width */
     margin: 0 auto; /* Center the container horizontally */
+    
 }
 
 
@@ -89,4 +144,80 @@ section {
 
 .icon:nth-child(4) {
     transition-delay: 600ms;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bkg-container {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    width: 100%;
+    
+  }
+
+    .hero-text {
+        font-size: 2rem;
+        margin-top: 100px;
+    }
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+   
+}
+.icon-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 102vh;
+   
+}
+
+.waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(224% + 1.3px);
+    height: 200px;
+}
+
+.waves .shape-fill {
+    fill: #FFFFFF;
+}
+
+.waves-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.waves-blue svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 157px;
+    transform: rotateY(180deg);
+}
+
+.waves-blue .shape-fill {
+    fill: #3C31DD;
 }
