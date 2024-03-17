@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import {DrawerDialogDemo} from '../comps/draw';
+import {ModeToggle} from '../ui/mode-toggle';
 import '../../assets/css/styles.css';
 import {
     navigationMenuTriggerStyle,
@@ -25,6 +28,10 @@ export function Navbar() {
                             <span className="text-white font-semibold">John Walters</span>
                         </a>
                     </div>
+                    <div className="flex items-center space-x-4">
+        <DrawerDialogDemo />
+        <ModeToggle />
+      </div>
                     <div className="md:block">
                         <div className="ml-4 flex items-center">
                             <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Menu</a>
