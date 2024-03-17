@@ -36,7 +36,10 @@ hiddenElements2.forEach(element => {
 
   return (
     <div id="about" className={`app-container ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+    <div className='layowave overflow-visible'></div>
     <div className="bkg-container flex-container">
+        
+
       <div className="hero-left hiding">
         <h1 className='blu hero-text'>Name: John Walters </h1>
       </div>
