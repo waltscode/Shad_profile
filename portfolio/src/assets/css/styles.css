@@ -50,11 +50,14 @@ section {
    transform: translateX(0);
 }
 
-.blob-effect {  
+.blob-effect {
+   
     height: 380px;
-    margin: 20px;
-    box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
-    animation: animate 6s ease-in-out infinite;
+    background-size: cover;
+    background-position: center center;
+    margin: 200px;
+    box-shadow: 5px 5px 5px 5px rgba(13, 110, 253, 0.3);
+    animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
 
 }
@@ -64,9 +67,26 @@ section {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
     50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 40% 70%;
+        border-radius: 50% 60% 70% 40% / 50% 60% 40% 30%;
     }
-    100% {
-        transform: scale(1);
-    }
+}
+
+.icons {
+    display: flex;
+    width: 100%; /* Example width */
+    max-width: 1200px; /* Example max-width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+
+.icon:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.icon:nth-child(3) {
+    transition-delay: 400ms;
+}     
+
+.icon:nth-child(4) {
+    transition-delay: 600ms;
 }

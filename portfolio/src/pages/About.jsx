@@ -36,11 +36,23 @@ export default function About() {
       <h1 className='egg'>Full-Stack Web Developer</h1>
     </div>
     <div>
-      <img src="/images/blue.png" alt="party pic" className="hiding prof-img blob-effect" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}></img>
+      <img src="/images/blue2.png" alt="party pic" className="hiding prof-img blob-effect" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }} />
+    </div>
+    {/* Include the techpics-container */}
+    <div className="icons">
+      <div className="icon hiding">
+        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+      </div>
+      <div className="icon hiding">
+        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+      </div>
+      <div className="icon hiding">
+        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+      </div>
+      <div className="icon hiding">
+        <img src="https://api.dicebear.com/8.x/bottts/png" alt="" />
+      </div>
     </div>
   </div>
-  
- 
-  
 );
 }
