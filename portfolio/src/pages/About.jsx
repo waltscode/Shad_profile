@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react';
 import {useTheme} from '../components/ui/theme-provider'
+import {  Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+  } from '../components/ui/card';
 import '../assets/css/styles.css'
 
 export default function About() {
@@ -93,7 +100,18 @@ hiddenElements2.forEach(element => {
         </div>
       </div>
       <div className="icons-right hiding">
-            <p>Front end</p>
+      <Card>
+  <CardHeader>
+    <CardTitle>Card Title</CardTitle>
+    <CardDescription>Card Description</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <p>Card Content</p>
+  </CardContent>
+  <CardFooter>
+    <p>Card Footer</p>
+  </CardFooter>
+</Card>
       </div>
     </div>
 
@@ -104,7 +122,18 @@ hiddenElements2.forEach(element => {
         </svg>
       </div>
       <div className="icons-left hiding2">
-            <p>back end</p>
+      <Card>
+  <CardHeader>
+    <CardTitle>Card Title</CardTitle>
+    <CardDescription>Card Description</CardDescription>
+  </CardHeader>
+  <CardContent>
+    <p>Card Content</p>
+  </CardContent>
+  <CardFooter>
+    <p>Card Footer</p>
+  </CardFooter>
+</Card>
       </div>
       <div className='icons-right'>
         <div className="icon hiding2 techlogo">
