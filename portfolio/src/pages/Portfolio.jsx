@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../assets/css/styles.css'
+
 import {
     Card,
     CardContent,
@@ -42,6 +42,13 @@ export default function Portfolio() {
     });
     const projects = [
         {
+            name: "Fitzy's Fades",
+            description: 'A real online barbershop website that allows users to schedule appointments with specific barbers and choose the type of service they want. The website is still technically a work in progress.. Stay Tuned',
+            link: 'https://github.com/waltscode/Fitzys_Fades',
+            image: '/images/fitzshop.jpg'
+
+        },
+        {
             name: 'LeafsFans HQ',
             description: "Welcome to LeafsFans HQ – your go-to destination for spirited discussions about the Toronto Maple Leafs! Our platform, designed to seamlessly adapt to widescreen computers and mobile devices, offers a comprehensive fan experience. The application is deployed on Heroku and features an active database, creating an engaging space for Maple Leafs enthusiasts. Explore the world of LeafsFans HQ and join the conversation today!"
             ,
@@ -62,6 +69,21 @@ export default function Portfolio() {
             description: 'Just Another Note Taker or J.A.T.E. is a simple note-taking app that allows users to create, edit, and delete notes. This project was built using HTML, CSS, JavaScript, and the Local Storage API. It is fully responsive and works on all devices. You are able to install it as a PWA allowing it to be opened locally on your desktop.',
             link: 'https://justanothereditor-ec93e92e2b84.herokuapp.com/',
             image: '/images/jate.png',
+
+        },
+        {
+            name: 'Funky Threads',
+            description: "Funky Threads is a straightforward e-commerce backend, meticulously crafted using the dynamic duo of Express and Sequelize technologies. This project serves as an illustrative example of fundamental routing principles and the establishment of table relationships."
+            ,
+            link: 'https://github.com/waltscode/Funky_Threads',
+            image: '/images/funky.png',
+
+        },
+        {
+            name: 'Social Network API',
+            description: "Welcome to the Social Networking API utilizing NoSQL Mongoose and the Mongo Compass database GUI! This API showcases routing capabilities via an Express server, enabling functionalities such as creating, updating, and removing users, managing friends lists, handling thoughts, and facilitating reactions to thoughts. Notably, friends and reactions are organized in arrays associated with users and thoughts, respectively, with their totals calculated using Mongoose virtuals. The endpoints are thoroughly testable in Insomnia, complemented by a video demonstration accessible in the README.md.",
+            link: 'https://github.com/waltscode/social_networking_api',
+            image: '/images/social.png',
 
         },
         {
@@ -121,14 +143,6 @@ export default function Portfolio() {
 
         },
         {
-            name: 'Funky Threads',
-            description: "Funky Threads is a straightforward e-commerce backend, meticulously crafted using the dynamic duo of Express and Sequelize technologies. This project serves as an illustrative example of fundamental routing principles and the establishment of table relationships."
-            ,
-            link: 'https://github.com/waltscode/Funky_Threads',
-            image: '/images/funky.png',
-
-        },
-        {
             name: 'Brimloft',
             description: "BrimLoft is a dynamic web application designed for hat enthusiasts. It offers users an exclusive platform to explore, register, and purchase a wide range of stylish hats. With features like user authentication, personalized profiles, and an intuitive shopping interface, BrimLoft elevates the online hat shopping experience."
             ,
@@ -136,20 +150,8 @@ export default function Portfolio() {
             image: '/images/brim.png',
 
         },
-        {
-            name: 'Social Network API',
-            description: "Welcome to the Social Networking API utilizing NoSQL Mongoose and the Mongo Compass database GUI! This API showcases routing capabilities via an Express server, enabling functionalities such as creating, updating, and removing users, managing friends lists, handling thoughts, and facilitating reactions to thoughts. Notably, friends and reactions are organized in arrays associated with users and thoughts, respectively, with their totals calculated using Mongoose virtuals. The endpoints are thoroughly testable in Insomnia, complemented by a video demonstration accessible in the README.md.",
-            link: 'https://github.com/waltscode/social_networking_api',
-            image: '/images/social.png',
-
-        },
-        {
-            name: "Fitzy's Fades",
-            description: 'A real online barbershop website that allows users to schedule appointments with specific barbers and choose the type of service they want. The website is still technically a work in progress.. Stay Tuned',
-            link: 'https://github.com/waltscode/Fitzys_Fades',
-            image: '/images/fitzshop.jpg'
-
-        },
+       
+       
 
     ];
 
@@ -182,7 +184,7 @@ export default function Portfolio() {
                     <CardFooter className="flex justify-center">
                         
                         <div className="px-6 py-4">
-                            <a href={featuredProject.link} className="inline-block bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600">View Project</a>
+                            <a href={featuredProject.link} target='_blank' className="inline-block bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600">View Project</a>
                         </div>
                     </CardFooter>
                 </Card>

@@ -1,121 +1,14 @@
 import React, { useEffect } from 'react';
-// import { BellRing, Check } from "lucide-react"
-// import { Switch } from '../components/ui/switch';
-// import { cn } from "../lib/utils"
-// import { Button } from "../components/ui/button"
-// import {
-//   Card,
-//   CardContent,
-//   CardDescription,
-//   CardFooter,
-//   CardHeader,
-//   CardTitle,
-// } from "../components/ui/card"
 
-import '../assets/css/styles.css'
+export function Contact() {
 
-
-function useIntersectionObserver(selector, options, callback) {
-    useEffect(() => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            callback(entry.target);
-          }
-        });
-      }, options);
-  
-      const elements = document.querySelectorAll(selector);
-      elements.forEach((element) => {
-        observer.observe(element);
-      });
-  
-      return () => {
-        elements.forEach((element) => {
-          observer.unobserve(element);
-        });
-      };
-    }, [selector, options, callback]);
-  }
-  
-// // Define notifications
-// const notifications = [
-//     {
-//       title: "Your call has been confirmed.",
-//       description: "1 hour ago",
-//     },
-//     {
-//       title: "You have a new message!",
-//       description: "1 hour ago",
-//     },
-//     {
-//       title: "Your subscription is expiring soon!",
-//       description: "2 hours ago",
-//     },
-//   ];
-  
-//   // Define CardDemo component
-//   function CardDemo({ className, ...props }) {
-//     return (
-//       <Card className={cn("w-[380px]", className)} {...props}>
-//         <CardHeader>
-//           <CardTitle>Notifications</CardTitle>
-//           <CardDescription>You have 3 unread messages.</CardDescription>
-//         </CardHeader>
-//         <CardContent className="grid gap-4">
-//           <div className=" flex items-center space-x-4 rounded-md border p-4">
-//             <BellRing />
-//             <div className="flex-1 space-y-1">
-//               <p className="text-sm font-medium leading-none">
-//                 Push Notifications
-//               </p>
-//               <p className="text-sm text-muted-foreground">
-//                 Send notifications to device.
-//               </p>
-//             </div>
-//             <Switch />
-//           </div>
-//           <div>
-//             {notifications.map((notification, index) => (
-//               <div
-//                 key={index}
-//                 className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0"
-//               >
-//                 <span className="flex h-2 w-2 translate-y-1 rounded-full bg-sky-500" />
-//                 <div className="space-y-1">
-//                   <p className="text-sm font-medium leading-none">
-//                     {notification.title}
-//                   </p>
-//                   <p className="text-sm text-muted-foreground">
-//                     {notification.description}
-//                   </p>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </CardContent>
-//         <CardFooter>
-//           <Button className="w-full">
-//             <Check className="mr-2 h-4 w-4" /> Mark all as read
-//           </Button>
-//         </CardFooter>
-//       </Card>
-//     );
-//   }
-  
-
-
-export default function Contact() {
-    useIntersectionObserver('.hiding', {}, (target) => {
-        target.classList.add('visible');
-      });
-      return (
+    return (
         <div id="contact">
-          <h1>Contact Me</h1>
-          <p>You can reach me at:</p>
-    
-          {/* Render the CardDemo component
-          <CardDemo className="mt-4" /> */}
+            <h1>Contact Me</h1>
+            <p>You can reach me at:</p>
+            <canvas id="canvas1"></canvas>
         </div>
-      );
-    }
+    );
+}
+
+export default Contact;

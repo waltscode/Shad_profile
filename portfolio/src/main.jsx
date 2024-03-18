@@ -6,6 +6,9 @@ import App from './App.jsx'
 import './App.css'
 import './index.css'
 import './assets/css/styles.css'
+import '../src/assets/css/media.css'
+import '../src/assets/css/gradient.css'
+
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './pages/About.jsx';
