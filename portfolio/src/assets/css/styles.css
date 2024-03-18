@@ -275,3 +275,8 @@ overflow-x: hidden
     width:45vw;
     align-items: center;
 }
+
+.small-avatar {
+    width: 16px;
+    height: 16px;
+}

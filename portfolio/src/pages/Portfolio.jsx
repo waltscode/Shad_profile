@@ -66,7 +66,8 @@ export default function Portfolio() {
         },
         {
             name: 'Regular Expressions Explained',
-            description: 'A Github Gist used to explain regular expressions. It is very in-depth and covers a lot of different use cases. Perfect for beginners!',
+            description: "Welcome to an Introduction To Regular Expressions! Regular Expressions or 'Rejex' are expressions used to enable computers to check for specific criteria in a string. This document serves as a comprehensive resource for mastering everything you need to know about them! From dissecting an email snippet to exploring the diverse elements in regex and its myriad practical applications. Enjoy!"
+            ,
             link: 'https://gist.github.com/waltscode/4b086bfb6a5a25ce5bdb60dc0c4a9b72',
             image: '/images/rejex.png',
 
@@ -132,7 +133,7 @@ export default function Portfolio() {
             description: "BrimLoft is a dynamic web application designed for hat enthusiasts. It offers users an exclusive platform to explore, register, and purchase a wide range of stylish hats. With features like user authentication, personalized profiles, and an intuitive shopping interface, BrimLoft elevates the online hat shopping experience."
             ,
             link: 'https://protected-gorge-42703-db942224a3bb.herokuapp.com/',
-            email: 'images/brimloft2.png',
+            image: '/images/brim.png',
 
         },
         {
@@ -146,7 +147,7 @@ export default function Portfolio() {
             name: "Fitzy's Fades",
             description: 'A real online barbershop website that allows users to schedule appointments with specific barbers and choose the type of service they want. The website is still technically a work in progress.. Stay Tuned',
             link: 'https://github.com/waltscode/Fitzys_Fades',
-            image: '/images/fitzshop.png'
+            image: '/images/fitzshop.jpg'
 
         },
 
@@ -170,14 +171,16 @@ export default function Portfolio() {
                 <Card className="max-w-xl mx-auto col-span-2 md:col-span-1 rounded-lg shadow-lg overflow-hidden my-4 feature-card"> {/* Added 'my-4' for vertical margin */}
                     <CardHeader>
                         <CardTitle>{featuredProject.name}</CardTitle>
-                        <CardDescription>{featuredProject.description}</CardDescription>
+                        
                     </CardHeader>
                     <CardContent>
                         <div className="px-6 py-4">
                             <img src={featuredProject.image} alt={featuredProject.name} className="mb-4 w-full" />
                         </div>
+                        <CardDescription>{featuredProject.description}</CardDescription>
                     </CardContent>
                     <CardFooter className="flex justify-center">
+                        
                         <div className="px-6 py-4">
                             <a href={featuredProject.link} className="inline-block bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600">View Project</a>
                         </div>
@@ -187,10 +190,9 @@ export default function Portfolio() {
                 {/* Other projects */}
                 <div className="other-projects">
                     {projects.map((project, index) => (
-                        <Card key={index} className="m-2">
+                        <Card key={index} className="m-2" style={{ width: '250px' }}>
                             <CardHeader>
                                 <CardTitle>{project.name}</CardTitle>
-                                <CardDescription>{project.description.length > 30 ? `${project.description.substring(0, 50)}...` : project.description}</CardDescription>
                             </CardHeader>
 
                             <CardFooter className="flex justify-center">

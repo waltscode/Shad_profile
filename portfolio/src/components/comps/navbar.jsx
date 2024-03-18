@@ -1,19 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {DrawerDialogDemo} from '../comps/draw';
-import {ModeToggle} from '../ui/mode-toggle';
+import { DrawerDialogDemo } from '../comps/draw';
+import { ModeToggle } from '../ui/mode-toggle';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 import '../../assets/css/styles.css';
-import {
-    navigationMenuTriggerStyle,
-    NavigationMenu,
-    NavigationMenuList,
-    NavigationMenuItem,
-    NavigationMenuContent,
-    NavigationMenuTrigger,
-    NavigationMenuLink,
-    NavigationMenuIndicator,
-    NavigationMenuViewport,
-} from '../ui/navigation-menu'
+
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +13,17 @@ export function Navbar() {
         <nav className="bg-gray-800 shadow w-full">
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 flex items-center">
                         <a href="/">
-                            <img src="https://api.dicebear.com/8.x/bottts/png" alt="Logo" className="h-8 w-8 mr-2" />
-                            <span className="text-white font-semibold">John Walters</span>
+                            <Avatar>
+                                <AvatarImage src="/images/home.png" />
+                            </Avatar>
                         </a>
                     </div>
                     <div className="flex items-center space-x-4">
-        <DrawerDialogDemo />
-        <ModeToggle />
-      </div>
+                        <DrawerDialogDemo />
+                        <ModeToggle />
+                    </div>
                     <div className="md:block">
                         <div className="ml-4 flex items-center">
                             <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Menu</a>
@@ -51,9 +43,18 @@ export function Navbar() {
                                 {isOpen && (
                                     <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
                                         <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                            <a href="/portfolio" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Portfolio</a>
-                                            <a href="/contact" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Contact</a>
-                                            <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Resume</a>
+                                            <a href="/portfolio" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                                                <img src="/images/folder.png" alt="Folder Icon" className="small-avatar" />
+                                                <span className="ml-2">Portfolio</span>
+                                            </a>
+                                            <a href="/contact" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                                                <img src="/images/contact.png" alt="Contact Icon" className="small-avatar" />
+                                                <span className="ml-2">Contact</span>
+                                            </a>
+                                            <a href="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">
+                                                <img src="/images/resume.png" alt="Resume Icon" className="small-avatar" />
+                                                <span className="ml-2">Resume</span>
+                                            </a>
                                         </div>
                                     </div>
                                 )}
