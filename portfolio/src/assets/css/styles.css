@@ -270,3 +270,8 @@ overflow-x: hidden
     display: flex;
     flex-wrap: wrap;
 }
+
+.feature-card{
+    width:45vw;
+    align-items: center;
+}
