@@ -86,7 +86,7 @@ export default function About() {
                     </Card>
                 
                 
-                    <Card className="text-left m-4 flex-grow h-80">
+                    <Card className="text-left m-5 flex-grow h-80">
                         <CardHeader>
                             <CardTitle>Technology Used On This App</CardTitle>
                         </CardHeader>
@@ -132,7 +132,7 @@ export default function About() {
                 </div>
 
                 <div className="flex justify-center items-center">
-                    <Card className="hiding m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-1/2 xl:w-1/3">
+                    <Card className="hiding m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-2/3 xl:w-2/3">
                         <CardHeader>
                             <CardTitle>Front End Technologies</CardTitle>
                         </CardHeader>
@@ -158,7 +158,7 @@ export default function About() {
 
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8"> {/* Added mt-8 for top margin */}
                 <div className="flex justify-center items-center">
-                    <Card className="hiding m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-1/2 xl:w-1/3">
+                    <Card className="hiding m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-2/3 xl:w-2/3">
                         <CardHeader>
                             <CardTitle>Back End Technologies</CardTitle>
                         </CardHeader>
