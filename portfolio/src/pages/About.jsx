@@ -43,33 +43,43 @@ export default function About() {
     }, []);
 
     return (
-        <div id="about" className= {`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'} `}>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding h-screen ">
-                <Card>
-                    <CardHeader>
-                        <CardTitle>Front End Technologies</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <p>Here are some key front-end technologies:</p>
-                        <ul>
-                            <li><strong>HTML5:</strong></li>
-                            <li><strong>CSS3:</strong></li>
-                            <li><strong>JavaScript (ECMAScript):</strong></li>
-                            <li><strong>React:</strong></li>
-                            <li><strong>Figma:</strong></li>
-                            <li><strong>Tailwind CSS:</strong></li>
-                            <li><strong>Bootstrap:</strong></li>
-                            <li><strong>Shadow DOM (Shadcn):</strong></li>
-                            <li><strong>Netlify:</strong></li>
-                            <li><strong>Heroku:</strong></li>
-                        </ul>
-                    </CardContent>
-                </Card>
+        <div id="about" className={`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'} `}>
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding h-screen">
+                <div className='w-full md:w-auto mx-10'> 
+                    <Card className='text-left mb-10' >
+                        <CardHeader>
+                            <CardTitle>John Walters</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <h2>Welcome to my portfolio website!</h2>
+                            <p>I am a novice full-stack web developer who recently completed a comprehensive full-stack web development bootcamp at the University of Toronto. With a rich background in IT spanning several years, technology is my passion and I love to learn new systems. I have recently found that I quite enjoy coding and it's my ambition to collaborate building new apps and really hone my skills in the field.</p>
+                        </CardContent>
+                    </Card>
+
+                    <Card className='text-left'>
+                        <CardHeader>
+                            <CardTitle>Technology Used On This App</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <ul className='list-disc ml-4'>
+                                <li >React.js</li>
+                                <li>Tailwind CSS</li>
+                                <li>Shadow DOM (Shadcn)</li>
+                                <li>Three.js</li>
+                                <li>CSS3</li>
+                                <li>HTML5</li>
+                                <li>Vite</li>
+                                <li>Node.js</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </CardContent>
+                    </Card>
+                </div>
                 <div>
-                    <img src="/images/blue2.png" alt="profile picture" className='blob-effect' />
+                    <img src="/images/blue2.png" alt="profile picture" className='blob-effect ' />
                 </div>
             </div>
-    
+
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding h-screen">
                 <div className="icons">
                     <div className="flex flex-wrap justify-center items-center">
@@ -108,7 +118,7 @@ export default function About() {
                     </CardContent>
                 </Card>
             </div>
-    
+
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding2 h-screen">
                 <Card>
                     <CardHeader>
@@ -129,7 +139,7 @@ export default function About() {
                         </ul>
                     </CardContent>
                 </Card>
-    
+
                 <div className='flex flex-wrap justify-center items-center'>
                     <img src="/images/logos/Insomnia.png" alt="" className="techlogo" />
                     <img src="/images/logos/jquery.png" alt="" className="techlogo" />
