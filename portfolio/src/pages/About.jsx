@@ -43,7 +43,7 @@ export default function About() {
     }, []);
 
     return (
-        <div id="about" className={`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+        <div id="about" className= {`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'} `}>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding h-screen ">
                 <Card>
                     <CardHeader>
