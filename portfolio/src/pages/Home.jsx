@@ -14,7 +14,7 @@ import {
     AccordionItem,
     AccordionTrigger
 } from '../components/ui/accordion'
-import { GithubW, Html5W, Css3W, JavascriptW, Javascript2W, NodewebkitW, UilReactW, FigmaW, TailwindW, Bootstrap, Handlebars, Netlify, Heroku,  } from '../components/comps/icons'
+import { Express, Html5W, Css3W, JavascriptW, NodewebkitW, UilReactW, FigmaW, TailwindW, Bootstrap, Handlebars, Netlify, Heroku, InsomniaW, JqueryW, MongodbW, MongooseW, MysqlW, SequelizeW, NodejsW, ViteW, GraphqlW, ApolloW, GithubW, Javascript2W } from '../components/comps/icons'
 
 
 
@@ -77,7 +77,8 @@ export default function Home() {
 
     return (
         <div id="about" className={`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 hiding2 md:mt-0 mt-8">
+           
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding2 md:mt-0 mt-8 ">
                 <div className="flex justify-center items-center mt-4">
                     <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
                 </div>
@@ -111,18 +112,7 @@ export default function Home() {
                                     prefer.
                                 </AccordionContent>
                             </AccordionItem>
-                        </Accordion>
-                    </CardContent>
-                </Card>
-
-
-                <Card className="text-left m-5 flex-grow  mt-10">
-                    <CardHeader>
-                        <CardTitle></CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                        <Accordion type="single" collapsible>
-                            <AccordionItem value="item-1">
+                            <AccordionItem value="item-4">
                                 <AccordionTrigger>Tech Used On This App</AccordionTrigger>
                                 <AccordionContent>
                                     <ul className="list-disc">
@@ -142,100 +132,102 @@ export default function Home() {
                     </CardContent>
                 </Card>
 
+
+
+
             </div>
 
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8"> {/* Added mt-8 for top margin */}
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8"> 
 
-            <div className='logo-box'>
-                    <ul className="company-icons">
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                <Card className='container mx-auto flex items-center justify-center'>
+                    <ul className="company-icons flex flex-wrap justify-center ">
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <GithubW />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <Html5W />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <Css3W />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <JavascriptW />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <NodewebkitW />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <UilReactW />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <FigmaW />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <TailwindW />
                                 </i>
                             </a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <Bootstrap />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <Handlebars />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <Netlify />
                                 </i>
                             </a>
                         </li>
-                        <li>
-                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                        <li >
+                            <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                 <i style={{ color: 'hsl(var(--primary))' }}>
                                     <Heroku />
                                 </i>
                             </a>
                         </li>
                     </ul>
-
-                </div>
+                </Card>
 
                 <div className="flex justify-center items-center">
                     <Card className="hiding m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-2/3 xl:w-2/3">
@@ -285,20 +277,94 @@ export default function Home() {
                     </Card>
                 </div>
 
-                <div className='flex flex-wrap justify-center items-center '>
-                    <div className='logos'>
-                        <img src="/images/logos/Insomnia.png" alt="" className="techlogo logo hiding2" />
-                        <img src="/images/logos/jquery.png" alt="" className="techlogo logo hiding2" />
-                        <img src="/images/logos/mongodb.png" alt="" className="techlogo logo hiding2" />
-                        <img src="/images/logos/Mongoose.js.png" alt="" className="techlogo logo hiding2" />
-                    </div>
-                    <div className='logos'>
-                        <img src="/images/logos/mysql.png" alt="" className="techlogo logo hiding2" />
-                        <img src="/images/logos/sequelize.png" alt="" className="techlogo logo hiding2" />
-                        <img src="/images/logos/nodejs (1).png" alt="" className="techlogo logo hiding2" />
-                        <img src="/images/logos/Vite.js.png" alt="" className="techlogo logo hiding2" />
-                    </div>
-                </div>
+                <Card className='container mx-auto flex items-center justify-center'>
+                    <ul className="company-icons flex flex-wrap justify-center ">
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <InsomniaW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <JqueryW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <MongodbW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <MongooseW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <MysqlW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <SequelizeW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <NodejsW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <ViteW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <GraphqlW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <ApolloW />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Express />
+                                </i>
+                            </a>
+                        </li>
+                        <li >
+                            <a className='hiding2' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Javascript2W />
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </Card>
             </div>
         </div>
     );

@@ -74,7 +74,7 @@ body {
     transform: translateX(0);
 }
 
-.logos {
+/* .logos {
     display: flex;
 
 }
@@ -91,68 +91,47 @@ body {
     transition-delay: 600ms;
 }
 
+.logo:nth-child(5) {
+    transition-delay: 800ms;
+}
+
+.logo:nth-child(6) {
+    transition-delay: 1000ms;
+}
+
+.logo:nth-child(7) {
+    transition-delay: 1200ms;
+}
+
+.logo:nth-child(8) {
+    transition-delay: 1400ms;
+}
+
+.logo:nth-child(9) {
+    transition-delay: 1600ms;
+}
+
+.logo:nth-child(10) {
+    transition-delay: 1800ms;
+}
+
+.logo:nth-child(11) {
+    transition-delay: 2000ms;
+}
+
+.logo:nth-child(12) {
+    transition-delay: 2200ms;
+} */
+
 .blob-effect {
     height: 480px;
     background-size: cover;
     background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(37, 99, 235, 1);
+    box-shadow: 5px 5px 5px 5px hsl(var(--primary));
     animation: animate 6s ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
 
-.green .blob-effect {
-    height: 480px;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(34, 197, 94, 1);
-    animation: animate 6s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-}
-
-.red .blob-effect {
-    height: 480px;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(225, 29, 72, 1);
-    animation: animate 6s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-}
-
-.orange .blob-effect {
-    height: 480px;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(249, 115, 22, 1);
-    animation: animate 6s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-}
-
-.light-green .blob-effect {
-    height: 480px;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(34, 197, 94, 1);
-    animation: animate 6s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-}
-
-.light-red .blob-effect {
-    height: 480px;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(225, 29, 72, 1);
-    animation: animate 6s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-}
-
-.light-orange .blob-effect {
-    height: 480px;
-    background-size: cover;
-    background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(249, 115, 22, 1);
-    animation: animate 6s ease-in-out infinite;
-    transition: all 1s ease-in-out;
-}
 
 @keyframes animate {
 
@@ -165,18 +144,6 @@ body {
         border-radius: 50% 60% 70% 40% / 50% 60% 40% 30%;
     }
 }
-
-#about {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-}
-
-
-
-
-
-
 
 .small-avatar {
     width: 16px;
@@ -216,31 +183,84 @@ rgba(249, 115, 22, 1) orange
 .company-icons {
     margin-top: 2rem;
     display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .company-icons li {
     list-style: none;
-    margin: 0 15px;
-    
+    margin: 45px 70px;
 }
 
 .company-icons li a {
     text-decoration: none;
     width: 50px;
-     height: 50px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     border-radius: 50%;
-     transition: 0.3s ease-in-out;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: opacity 0.5s ease, transform 0.5s ease 0.2s; /* Apply transition effects */
 }
 
 .company-icons li a:hover {
-    transform: scale(1.2);
     background-color: #f1f1f1;
 }
 
 .company-icons li a i {
     font-size: 20px;
-    
+}
+
+
+.company-icons li{
+    opacity: 1; /* Initially hide the logos */
+    /* Initially move the logos down */
+}
+
+.company-icons li:nth-child(1) a {
+    transition-delay: 0.1s;
+}
+
+.company-icons li:nth-child(2) a {
+    transition-delay: 0.2s;
+}
+
+.company-icons li:nth-child(3) a {
+    transition-delay: 0.3s;
+}
+
+.company-icons li:nth-child(4) a {
+    transition-delay: 0.4s;
+}
+
+.company-icons li:nth-child(5) a {
+    transition-delay: 0.5s;
+}
+
+.company-icons li:nth-child(6) a {
+    transition-delay: 0.6s;
+}
+
+.company-icons li:nth-child(7) a {
+    transition-delay: 0.7s;
+}
+
+.company-icons li:nth-child(8) a {
+    transition-delay: 0.8s;
+}
+
+.company-icons li:nth-child(9) a {
+    transition-delay: 0.9s;
+}
+
+.company-icons li:nth-child(10) a {
+    transition-delay: 1s;
+}
+
+.company-icons li:nth-child(11) a {
+    transition-delay: 1.1s;
+}
+
+.company-icons li:nth-child(12) a {
+    transition-delay: 1.2s;
 }
