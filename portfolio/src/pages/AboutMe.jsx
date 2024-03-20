@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import { GithubW, Html5W, Css3W, JavascriptW, Javascript2W, NodewebkitW, UilReactW, FigmaW, TailwindW, Bootstrap, Handlebars, Netlify, Heroku,  } from '../components/comps/icons'
 
 export function AboutMe() {
 
@@ -120,6 +120,96 @@ export function AboutMe() {
                     The moral of the story is: never underestimate the power of a good laugh
                     and always be careful of bad ideas.
                 </p>
+
+                <div className='logo-box'>
+                    <ul className="company-icons">
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <GithubW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Html5W />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Css3W />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <JavascriptW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <NodewebkitW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <UilReactW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <FigmaW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <TailwindW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Bootstrap />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Handlebars />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Netlify />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Heroku />
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
 
 
