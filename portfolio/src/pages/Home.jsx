@@ -14,6 +14,8 @@ import {
     AccordionItem,
     AccordionTrigger
 } from '../components/ui/accordion'
+import { GithubW, Html5W, Css3W, JavascriptW, Javascript2W, NodewebkitW, UilReactW, FigmaW, TailwindW, Bootstrap, Handlebars, Netlify, Heroku,  } from '../components/comps/icons'
+
 
 
 export default function Home() {
@@ -145,25 +147,94 @@ export default function Home() {
 
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8"> {/* Added mt-8 for top margin */}
 
-                <div className="flex flex-wrap justify-center items-center">
-                    <div className='logos'>
-                        <img src="/images/logos/html.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/css3.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/javascript.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/JavaScript-logo.png" alt="" className="techlogo logo hiding" />
-                    </div>
-                    <div className='logos'>
-                        <img src="/images/logos/Webpack.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/react.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/Figma.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/TailwindCSS.png" alt="" className="techlogo logo hiding" />
-                    </div>
-                    <div className='logos'>
-                        <img src="/images/logos/Bootstrapnew.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/handlebars.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/netlify.png" alt="" className="techlogo logo hiding" />
-                        <img src="/images/logos/Heroku.png" alt="" className="techlogo logo hiding" />
-                    </div>
+            <div className='logo-box'>
+                    <ul className="company-icons">
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <GithubW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Html5W />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Css3W />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <JavascriptW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <NodewebkitW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <UilReactW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <FigmaW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <TailwindW />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Bootstrap />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Handlebars />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Netlify />
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                <i style={{ color: 'hsl(var(--primary))' }}>
+                                    <Heroku />
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+
                 </div>
 
                 <div className="flex justify-center items-center">
