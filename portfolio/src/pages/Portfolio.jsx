@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Button} from '../components/ui/button';
 
 import {
     Card,
@@ -63,7 +64,7 @@ export default function Portfolio() {
             image: '/images/filmfinderr.png',
 
         },
-       
+
         {
             name: 'J.A.T.E.',
             description: 'Just Another Note Taker or J.A.T.E. is a simple note-taking app that allows users to create, edit, and delete notes. This project was built using HTML, CSS, JavaScript, and the Local Storage API. It is fully responsive and works on all devices. You are able to install it as a PWA allowing it to be opened locally on your desktop.',
@@ -139,7 +140,7 @@ export default function Portfolio() {
             description: "Welcome to the Company Database Management System! This tool, powered by Inquirer in the terminal, offers a user-friendly interface for seamlessly accessing and managing information about our employees, departments, positions, and managers. Through this system, you have the ability to effortlessly view and update details related to departments, employees, and positions within the company. Explore the functionality provided to streamline your interaction with our company's data. Happy exploring!"
             ,
             link: 'https://github.com/waltscode/Company_DB_Management',
-            image:'/images/dbmanage.png',
+            image: '/images/dbmanage.png',
 
         },
         {
@@ -150,8 +151,8 @@ export default function Portfolio() {
             image: '/images/brim.png',
 
         },
-       
-       
+
+
 
     ];
 
@@ -164,16 +165,17 @@ export default function Portfolio() {
     };
 
     return (
+
         <div className="py-8 px-4 hiding-portfolios">
             <h1 className="text-3xl font-bold text-center mb-4">Portfolio</h1>
             <p className="text-lg text-center mb-8">Check out some of my projects.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid  md:grid-cols-6 gap-6">
                 {/* Featured project */}
-                <Card className="max-w-xl mx-auto col-span-2 md:col-span-1 rounded-lg shadow-lg overflow-hidden my-4 feature-card"> {/* Added 'my-4' for vertical margin */}
+                <Card className="col-span-3 sm:grid-cols-1">
                     <CardHeader>
                         <CardTitle>{featuredProject.name}</CardTitle>
-                        
+
                     </CardHeader>
                     <CardContent>
                         <div className="px-6 py-4">
@@ -182,7 +184,7 @@ export default function Portfolio() {
                         <CardDescription>{featuredProject.description}</CardDescription>
                     </CardContent>
                     <CardFooter className="flex justify-center">
-                        
+
                         <div className="px-6 py-4">
                             <a href={featuredProject.link} target='_blank' className="inline-block bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600">View Project</a>
                         </div>
@@ -190,21 +192,20 @@ export default function Portfolio() {
                 </Card>
 
                 {/* Other projects */}
-                <div className="other-projects">
+                <div className="flex flex-wrap justify-around items-stretch col-span-3">
                     {projects.map((project, index) => (
-                        <Card key={index} className="m-2" style={{ width: '250px' }}>
+                        <Card key={index} className="flex-auto max-w-xs mx-2 my-4">
                             <CardHeader>
                                 <CardTitle>{project.name}</CardTitle>
                             </CardHeader>
 
                             <CardFooter className="flex justify-center">
-                                <a
+                                <Button
                                     href={project.link}
-                                    className="inline-block bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600"
                                     onClick={(event) => handleProjectClick(event, project)}
                                 >
                                     More Details
-                                </a>
+                                </Button>
                             </CardFooter>
                         </Card>
                     ))}

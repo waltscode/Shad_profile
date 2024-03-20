@@ -14,7 +14,6 @@ export default function About() {
     const { theme } = useTheme();
 
     useEffect(() => {
-        // Resize functions
         const removeClassesOnSmallScreens = () => {
             if (window.innerWidth <= 767) {
                 const hidingElements = document.querySelectorAll('.hiding');
@@ -31,12 +30,12 @@ export default function About() {
 
         window.addEventListener('resize', removeClassesOnSmallScreens);
 
-        // Cleanup for resize event listener
+        
         return () => {
             window.removeEventListener('resize', removeClassesOnSmallScreens);
         };
 
-        // Intersection observer logic...
+        
     }, []);
 
     useEffect(() => {
@@ -60,7 +59,7 @@ export default function About() {
             observer.observe(element);
         });
 
-        // Cleanup function
+        
         return () => {
             hiddenElements.forEach(element => {
                 observer.unobserve(element);
@@ -70,12 +69,12 @@ export default function About() {
 
     return (
         <div id="about" className={`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 hiding2 md:mt-0 mt-8"> {/* Added mt-8 for top margin */}
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 hiding2 md:mt-0 mt-8"> 
                 <div className="flex justify-center items-center mt-4">
                     <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
                 </div>
 
-                <Card className="text-left m-4 flex-grow h-80 mt-10">
+                <Card className="text-left m-5 flex-grow  mt-10">
                     <CardHeader>
                         <CardTitle>John Walters</CardTitle>
                     </CardHeader>
@@ -86,7 +85,7 @@ export default function About() {
                 </Card>
 
 
-                <Card className="text-left m-5 flex-grow h-80 mt-10">
+                <Card className="text-left m-5 flex-grow  mt-10">
                     <CardHeader>
                         <CardTitle>Technology Used On This App</CardTitle>
                     </CardHeader>
