@@ -1,13 +1,13 @@
 import * as THREE from 'three';
 import { useEffect, useRef } from "react";
 
-function MyThree() {
+function MyThreeR() {
   const refContainer = useRef(null);
 
   useEffect(() => {
     // Scene
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x020817);
+    scene.background = new THREE.Color(0x0c0a09);
 
     // Sizes
     const sizes = {
@@ -72,7 +72,7 @@ function MyThree() {
     // Materials
     const particlesMaterial = new THREE.PointsMaterial({
         size: 0.004, // Decrease the size of particles
-        color: new THREE.Color(0x04a0ff) // Adjust the color of particles
+        color: new THREE.Color(0xe11d48) // Adjust the color of particles
     });
 
     // Particle system
@@ -116,4 +116,4 @@ function MyThree() {
   );
 }
 
-export default MyThree;
+export default MyThreeR;

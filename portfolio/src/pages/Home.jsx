@@ -76,14 +76,14 @@ export default function Home() {
     }, []);
 
     return (
-        <div id="about" className={`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+        <div id="about" className={`app-container ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
            
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding2 md:mt-0 mt-8 ">
-                <div className="flex justify-center items-center mt-4">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding2 md:mt-0 m-8 md:h-screen">
+                <div className="flex justify-center items-center mb-20">
                     <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
                 </div>
 
-                <Card className="text-left m-5 flex-grow  mt-10">
+                <Card className="text-left m-5 flex-grow  m-36 ">
                     <CardHeader>
                         <CardTitle>John Walters</CardTitle>
                     </CardHeader>

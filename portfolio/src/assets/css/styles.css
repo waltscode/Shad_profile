@@ -16,21 +16,6 @@
     --black: #000000;
 }
 
-.egg {
-    color: var(--eggshell);
-}
-
-.purp {
-    color: var(--purple);
-}
-
-.blu {
-    color: var(--blue);
-
-}
-
-
-
 body {
 
     margin: 0;
@@ -39,9 +24,10 @@ body {
     overflow-x: hidden
 }
 
-
-
-
+#about {
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 .hiding {
     opacity: 0;
@@ -49,8 +35,6 @@ body {
     transform: translateX(-100%);
     transition: all 1s;
 }
-
-
 
 .hiding2 {
     opacity: 0;
@@ -66,62 +50,11 @@ body {
     transition: all 1s;
 }
 
-
-
 .visible {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
-
-/* .logos {
-    display: flex;
-
-}
-
-.logo:nth-child(2) {
-    transition-delay: 200ms;
-}
-
-.logo:nth-child(3) {
-    transition-delay: 400ms;
-}
-
-.logo:nth-child(4) {
-    transition-delay: 600ms;
-}
-
-.logo:nth-child(5) {
-    transition-delay: 800ms;
-}
-
-.logo:nth-child(6) {
-    transition-delay: 1000ms;
-}
-
-.logo:nth-child(7) {
-    transition-delay: 1200ms;
-}
-
-.logo:nth-child(8) {
-    transition-delay: 1400ms;
-}
-
-.logo:nth-child(9) {
-    transition-delay: 1600ms;
-}
-
-.logo:nth-child(10) {
-    transition-delay: 1800ms;
-}
-
-.logo:nth-child(11) {
-    transition-delay: 2000ms;
-}
-
-.logo:nth-child(12) {
-    transition-delay: 2200ms;
-} */
 
 .blob-effect {
     height: 480px;
@@ -200,7 +133,7 @@ rgba(249, 115, 22, 1) orange
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: opacity 0.5s ease, transform 0.5s ease 0.2s; /* Apply transition effects */
+    transition: opacity 0.5s ease, transform 0.5s ease 0.2s; 
 }
 
 .company-icons li a:hover {
@@ -213,8 +146,8 @@ rgba(249, 115, 22, 1) orange
 
 
 .company-icons li{
-    opacity: 1; /* Initially hide the logos */
-    /* Initially move the logos down */
+    opacity: 1; 
+   
 }
 
 .company-icons li:nth-child(1) a {
