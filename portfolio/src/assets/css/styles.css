@@ -95,7 +95,61 @@ body {
     height: 480px;
     background-size: cover;
     background-position: center center;
-    box-shadow: 5px 5px 5px 5px rgba(13, 110, 253, 0.3);
+    box-shadow: 5px 5px 5px 5px rgba(37, 99, 235, 1);
+    animation: animate 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.green .blob-effect {
+    height: 480px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 5px 5px rgba(34, 197, 94, 1);
+    animation: animate 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.red .blob-effect {
+    height: 480px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 5px 5px rgba(225, 29, 72, 1);
+    animation: animate 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.orange .blob-effect {
+    height: 480px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 5px 5px rgba(249, 115, 22, 1);
+    animation: animate 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.light-green .blob-effect {
+    height: 480px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 5px 5px rgba(34, 197, 94, 1);
+    animation: animate 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.light-red .blob-effect {
+    height: 480px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 5px 5px rgba(225, 29, 72, 1);
+    animation: animate 6s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+.light-orange .blob-effect {
+    height: 480px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 5px 5px 5px 5px rgba(249, 115, 22, 1);
     animation: animate 6s ease-in-out infinite;
     transition: all 1s ease-in-out;
 }
@@ -128,3 +182,26 @@ body {
     width: 16px;
     height: 16px;
 }
+/* 
+221.2 83.2% 53.3%   blue
+
+346.8 77.2% 49.8%  red
+
+142.1 70.6% 45.3% green
+
+24.6 95% 53.1% orange */
+
+/* #2563eb blue   
+#e11d48 red
+#22c55e green
+#f97316 orange
+
+*/
+
+/* 
+rgba(37, 99, 235, 1) blue
+rgba(225, 29, 72, 1) red
+rgba(34, 197, 94, 1) green
+rgba(249, 115, 22, 1) orange
+ */
+

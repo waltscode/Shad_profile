@@ -8,9 +8,15 @@ import {
     CardHeader,
     CardTitle,
 } from '../components/ui/card';
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger
+} from '../components/ui/accordion'
 
 
-export default function About() {
+export default function Home() {
     const { theme } = useTheme();
 
     useEffect(() => {
@@ -30,12 +36,12 @@ export default function About() {
 
         window.addEventListener('resize', removeClassesOnSmallScreens);
 
-        
+
         return () => {
             window.removeEventListener('resize', removeClassesOnSmallScreens);
         };
 
-        
+
     }, []);
 
     useEffect(() => {
@@ -59,7 +65,7 @@ export default function About() {
             observer.observe(element);
         });
 
-        
+
         return () => {
             hiddenElements.forEach(element => {
                 observer.unobserve(element);
@@ -69,7 +75,7 @@ export default function About() {
 
     return (
         <div id="about" className={`app-container grad-bkg ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
-            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 hiding2 md:mt-0 mt-8"> 
+            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-4 hiding2 md:mt-0 mt-8">
                 <div className="flex justify-center items-center mt-4">
                     <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
                 </div>
@@ -79,28 +85,58 @@ export default function About() {
                         <CardTitle>John Walters</CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <h2>Welcome to my portfolio website!</h2>
+                        {/* <h2>Welcome to my portfolio website!</h2>
                         <p>I am a novice full-stack web developer who recently completed a comprehensive full-stack web development bootcamp at the University of Toronto. With a rich background in IT spanning several years, technology is my passion and I love to learn new systems. I have recently found that I quite enjoy coding and it's my ambition to collaborate building new apps and really hone my skills in the field.</p>
+                         */}
+                        <Accordion type="single" collapsible className="w-full">
+                            <AccordionItem value="item-1">
+                                <AccordionTrigger>Is it accessible?</AccordionTrigger>
+                                <AccordionContent>
+                                    Yes. It adheres to the WAI-ARIA design pattern.
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-2">
+                                <AccordionTrigger>Is it styled?</AccordionTrigger>
+                                <AccordionContent>
+                                    Yes. It comes with default styles that matches the other
+                                    components&apos; aesthetic.
+                                </AccordionContent>
+                            </AccordionItem>
+                            <AccordionItem value="item-3">
+                                <AccordionTrigger>Is it animated?</AccordionTrigger>
+                                <AccordionContent>
+                                    Yes. It&apos;s animated by default, but you can disable it if you
+                                    prefer.
+                                </AccordionContent>
+                            </AccordionItem>
+                        </Accordion>
                     </CardContent>
                 </Card>
 
 
                 <Card className="text-left m-5 flex-grow  mt-10">
                     <CardHeader>
-                        <CardTitle>Technology Used On This App</CardTitle>
+                        <CardTitle></CardTitle>
                     </CardHeader>
                     <CardContent>
-                        <ul className="list-disc">
-                            <li>React.js</li>
-                            <li>Tailwind CSS</li>
-                            <li>Shadow DOM (Shadcn)</li>
-                            <li>Three.js</li>
-                            <li>CSS3</li>
-                            <li>HTML5</li>
-                            <li>Vite</li>
-                            <li>Node.js</li>
-                            <li>JavaScript</li>
-                        </ul>
+                        <Accordion type="single" collapsible>
+                            <AccordionItem value="item-1">
+                                <AccordionTrigger>Tech Used On This App</AccordionTrigger>
+                                <AccordionContent>
+                                    <ul className="list-disc">
+                                        <li>React.js</li>
+                                        <li>Tailwind CSS</li>
+                                        <li>Shadow DOM (Shadcn)</li>
+                                        <li>Three.js</li>
+                                        <li>CSS3</li>
+                                        <li>HTML5</li>
+                                        <li>Vite</li>
+                                        <li>Node.js</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </AccordionContent>
+                            </AccordionItem>
+                        </Accordion>
                     </CardContent>
                 </Card>
 

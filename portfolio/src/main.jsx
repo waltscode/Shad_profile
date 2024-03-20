@@ -12,10 +12,11 @@ import'../src/assets/css/themes.css'
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import About from './pages/About.jsx';
+import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import Portfolio from './pages/Portfolio.jsx';
+import AboutMe from './pages/AboutMe.jsx';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <About />,
+        element: <Home />,
       },
       {
         path: '/contact',
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: '/portfolio',
         element: <Portfolio />,
       },
+      {
+        path: '/about',
+        element: <AboutMe />,
+      }
     ],
   },
 ]);
