@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { DrawerDialogDemo } from '../comps/draw';
 import { ModeToggle } from '../ui/mode-toggle';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import {Home} from './icons'
 
 
 
@@ -21,7 +22,7 @@ export function Navbar() {
                         </a>
                     </div>
                     <div className="flex items-center space-x-4">
-                        <DrawerDialogDemo />
+                       
                         <ModeToggle />
                     </div>
                     <div className="md:block">

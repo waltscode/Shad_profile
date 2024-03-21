@@ -71,7 +71,7 @@ function MyThree() {
 
     // Materials
     const particlesMaterial = new THREE.PointsMaterial({
-        size: 0.004, // Decrease the size of particles
+        size: 0.005, // Decrease the size of particles
         color: new THREE.Color(0x04a0ff) // Adjust the color of particles
     });
 
@@ -94,7 +94,7 @@ function MyThree() {
         const elapsedTime = clock.getElapsedTime();
 
         // Update particles
-        particles.rotation.y = 0.4 * elapsedTime;
+        particles.rotation.y = 0.5 * elapsedTime;
 
         // Render
         renderer.render(scene, camera);

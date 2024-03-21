@@ -25,9 +25,10 @@ body {
 }
 
 #about {
-    margin-left: 100px;
-    margin-right: 100px;
+    
 }
+
+
 
 .hiding {
     opacity: 0;
@@ -114,7 +115,7 @@ rgba(249, 115, 22, 1) orange
 }
 
 .company-icons {
-    margin-top: 2rem;
+   
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;
@@ -127,8 +128,8 @@ rgba(249, 115, 22, 1) orange
 
 .company-icons li a {
     text-decoration: none;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,7 +142,7 @@ rgba(249, 115, 22, 1) orange
 }
 
 .company-icons li a i {
-    font-size: 20px;
+    font-size: 32px;
 }
 
 
@@ -197,3 +198,4 @@ rgba(249, 115, 22, 1) orange
 .company-icons li:nth-child(12) a {
     transition-delay: 1.2s;
 }
+
