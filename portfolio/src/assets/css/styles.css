@@ -16,6 +16,8 @@
     --black: #000000;
 }
 
+
+
 body {
 
     margin: 0;
@@ -24,8 +26,25 @@ body {
     overflow-x: hidden
 }
 
+.orng {
+    color: var(--orange);
+}
+
+
 #about {
     
+}
+
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.contact-top {
+    margin-top: 200px;
 }
 
 
@@ -105,6 +124,18 @@ rgba(225, 29, 72, 1) red
 rgba(34, 197, 94, 1) green
 rgba(249, 115, 22, 1) orange
  */
+
+ .home-icon{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 38px
+ }
+
+ .home-icon:hover {
+    background-color: #f1f1f1;
+    color: hsl(var(--primary));
+}
 
 .logo-box {
     display: flex;

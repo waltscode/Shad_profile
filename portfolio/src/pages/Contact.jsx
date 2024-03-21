@@ -18,11 +18,35 @@ import {
 export function Contact() {
 
     return (
-        <div id="contact">
-            <h1>Get in touch</h1>
-            
-            <MyThree />
+        <div id='contact' className={`app-container md:mr-20 md:ml-20 md:mb-20`}>
+    <div className='grid grid-cols-6 contact-top'>
+        <div className='col-span-1'>
+            <Card className="text-left">
+                <CardHeader>
+                    <CardTitle className='text-3xl'>John Walters</CardTitle>
+                    <CardDescription className='text-xl'>Full Stack Web Developer</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    {/* Card content */}
+                </CardContent>
+            </Card>
         </div>
+        <div className='col-span-1'>
+            <Card className="text-left">
+                <CardHeader>
+                    <CardTitle className='text-3xl'>John Walters</CardTitle>
+                    <CardDescription className='text-xl'>Full Stack Web Developer</CardDescription>
+                </CardHeader>
+                <CardContent>
+                    {/* Card content */}
+                </CardContent>
+            </Card>
+        </div>
+        
+       
+    </div>
+    <MyThree />
+</div>
     );
 }
 

@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { DrawerDialogDemo } from '../comps/draw';
 import { ModeToggle } from '../ui/mode-toggle';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import {Home} from './icons'
+import {Home, IcRoundHome } from './icons'
+import { Button } from '../ui/button';
 
 
 
@@ -11,15 +12,18 @@ export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-gray-800 shadow w-full">
+        <nav className="bg-primary shadow w-full fixed z-40 top-0">
             <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
-                    <div className="flex-shrink-0 flex items-center">
+                    <div className="flex items-center">
+                        <Button className='home-icon'>
                         <a href="/">
-                            <Avatar>
-                                <AvatarImage src="/images/home.png" />
-                            </Avatar>
+                           
+                            <IcRoundHome />
+                            
+                            
                         </a>
+                        </Button>
                     </div>
                     <div className="flex items-center space-x-4">
                        
@@ -29,7 +33,7 @@ export function Navbar() {
                         <div className="ml-4 flex items-center">
                             <a href="#" className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Menu</a>
                             <div className="relative ml-3">
-                                <button
+                                <Button
                                     className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring focus:ring-white"
                                     onClick={() => setIsOpen(!isOpen)}
                                 >
@@ -40,7 +44,7 @@ export function Navbar() {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                                         )}
                                     </svg>
-                                </button>
+                                </Button>
                                 {isOpen && (
                                     <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
                                         <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">

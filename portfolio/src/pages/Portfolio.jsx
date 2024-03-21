@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {Button} from '../components/ui/button';
+import { Button } from '../components/ui/button';
 
 import {
     Card,
@@ -165,52 +165,56 @@ export default function Portfolio() {
     };
 
     return (
-
-        <div className="py-8 px-4 hiding-portfolios">
-            <h1 className="text-3xl font-bold text-center mb-4">Portfolio</h1>
-            <p className="text-lg text-center mb-8">Check out some of my projects.</p>
-
-            <div className="grid  md:grid-cols-6 gap-6">
-                {/* Featured project */}
-                <Card className="col-span-3 sm:grid-cols-1">
+        <div id='portfolio' className={`app-container md:m-20 flex flex-wrap`}>
+            {/* Container for featured project */}
+            <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+                <Card className="">
                     <CardHeader>
                         <CardTitle>{featuredProject.name}</CardTitle>
-
                     </CardHeader>
                     <CardContent>
                         <div className="px-6 py-4">
-                            <img src={featuredProject.image} alt={featuredProject.name} className="mb-4 w-full" />
+                            <img src={featuredProject.image} alt={featuredProject.name} className="mb-4 w-full object-fit h-96 " />
                         </div>
                         <CardDescription>{featuredProject.description}</CardDescription>
                     </CardContent>
                     <CardFooter className="flex justify-center">
-
+                    <Button>
                         <div className="px-6 py-4">
-                            <a href={featuredProject.link} target='_blank' className="inline-block bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600">View Project</a>
+                            <a href={featuredProject.link} target='_blank' >View Project</a>
                         </div>
+                        </Button>
                     </CardFooter>
+
                 </Card>
-
-                {/* Other projects */}
-                <div className="flex flex-wrap justify-around items-stretch col-span-3">
-                    {projects.map((project, index) => (
-                        <Card key={index} className="flex-auto max-w-xs mx-2 my-4">
-                            <CardHeader>
-                                <CardTitle>{project.name}</CardTitle>
-                            </CardHeader>
-
-                            <CardFooter className="flex justify-center">
-                                <Button
-                                    href={project.link}
-                                    onClick={(event) => handleProjectClick(event, project)}
-                                >
-                                    More Details
-                                </Button>
-                            </CardFooter>
-                        </Card>
+            </div>
+            {/* Container for other projects */}
+            <div className="w-full md:w-1/2 px-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {projects.map(project => (
+                        <div key={project.id}>
+                            <Card className="text-center p-0" style={{ height: "200px" }}>
+                                <CardHeader>
+                                    <CardTitle className='text-xl'>{project.name}</CardTitle>
+                                    
+                                </CardHeader>
+                                <CardContent>
+                                    {/* Card content */}
+                                </CardContent>
+                                <CardFooter className="flex justify-center mb-20">
+                                    <Button
+                                        href={project.link}
+                                        onClick={(event) => handleProjectClick(event, project)}
+                                    >
+                                        More Details
+                                    </Button>
+                                </CardFooter>
+                            </Card>
+                        </div>
                     ))}
                 </div>
             </div>
         </div>
     );
+
 }
