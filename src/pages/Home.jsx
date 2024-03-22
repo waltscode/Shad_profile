@@ -82,17 +82,17 @@ export default function Home() {
     }, []);
 
     return (
-        <div id="about" className={`app-container md:mr-20 md:ml-20 md:mb-20 ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
+        <div id="about" className={`app-container  md:mr-20 md:ml-20 md:mb-20 ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding2 md:mt-0  md:h-screen sm:mt-10">
-                <div className="flex justify-center items-center mb-20">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 hiding2 md:mt-0  md:h-screen ">
+                <div className="flex justify-center items-center mb-20 ">
                     <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
                 </div>
 
-                <Card className="text-left  md:m-36  ">
+                <Card className="text-left  md:m-36  " style={{ borderColor: 'hsl(var(--primary))' }}>
                     <CardHeader >
                         <CardTitle className='text-5xl'>John Walters</CardTitle>
-                        <CardDescription className='text-2xl'>Full Stack Web Developer</CardDescription>
+                        <CardDescription className='text-2xl'>Full-Stack Web Developer</CardDescription>
                     </CardHeader>
                     <CardContent>
 
@@ -130,6 +130,7 @@ export default function Home() {
                                         <li>Vite</li>
                                         <li>Node.js</li>
                                         <li>JavaScript</li>
+                                        <li>Netlify</li>
                                     </ul>
                                 </AccordionContent>
                             </AccordionItem>
@@ -154,7 +155,7 @@ export default function Home() {
 
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8 ">
 
-                <Card className='mx-auto flex items-center justify-center'>
+                <Card className='mx-auto flex items-center justify-center' style={{ borderColor: 'hsl(var(--primary))' }}>
                     <ul className="company-icons flex flex-wrap justify-center">
                         <li>
                             <HoverCard>
@@ -327,8 +328,8 @@ export default function Home() {
                     </ul>
                 </Card>
 
-                <div className="flex justify-center items-center">
-                    <Card className="hiding m-4 text-left w-full sm:w-auto md:w-2/3 ">
+                <div className="flex justify-center items-start">
+                    <Card className="hiding m-4 text-left w-full sm:w-auto md:w-2/3 " style={{ borderColor: 'hsl(var(--primary))' }}>
                         <CardHeader>
                             <CardTitle>Front End Technologies</CardTitle>
                         </CardHeader>
@@ -360,9 +361,9 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8"> {/* Added mt-8 for top margin */}
-                <div className="flex justify-center items-center">
-                    <Card className="hiding2 m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-2/3 xl:w-2/3">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8"> 
+                <div className="flex justify-center items-start">
+                    <Card className="hiding2 m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-2/3 xl:w-2/3" style={{ borderColor: 'hsl(var(--primary))' }}>
                         <CardHeader>
                             <CardTitle>Back End Technologies</CardTitle>
                         </CardHeader>
@@ -391,7 +392,7 @@ export default function Home() {
                     </Card>
                 </div>
 
-                <Card className=' mx-auto flex items-center justify-center'>
+                <Card className=' mx-auto flex items-center justify-center' style={{ borderColor: 'hsl(var(--primary))' }}>
                     <ul className="company-icons flex flex-wrap justify-center">
                         <li>
                             <HoverCard>

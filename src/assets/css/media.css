@@ -12,71 +12,30 @@
 @media screen and (max-width: 576px) {
     .blob-effect {
         height: 240px; 
+        margin-top: 100px;
     }
 }
 
 
-/* Small devices (sm) */
-@media (max-width: 639px) {
-    .techlogo {
-        max-height: 60px;
-        max-width: 60px;
-        margin: 10px;
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .company-icons li {
+        margin: 10px 20px; 
     }
 
-    .techlogo img {
-        width: 100%;
-    }
-}
-
-/* Medium devices (md) */
-@media (min-width: 640px) and (max-width: 767px) {
-    .techlogo {
-        max-height: 80px;
-        max-width: 80px;
-        margin: 15px;
+    .company-icons li a {
+        width: 50px; 
+        height: 50px; 
     }
 
-    .techlogo img {
-        width: 100%;
+    .company-icons li a i {
+        font-size: 24px; 
     }
 }
 
-/* Large devices (lg) */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .techlogo {
-        max-height: 145px;
-        max-width: 145px;
-        margin: 20px;
-    }
-
-    .techlogo img {
-        width: 100%;
-    }
-}
-
-/* Extra large devices (xl) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-    .techlogo {
-        max-height: 145px;
-        max-width: 145px;
-        margin: 22px;
-    }
-
-    .techlogo img {
-        width: 100%;
-    }
-}
-
-/* Extra extra large devices (2xl) */
-@media (min-width: 1280px) {
-    .techlogo {
-        max-height: 145px;
-        max-width: 145px;
-        margin: 25px;
-    }
-
-    .techlogo img {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .hiding,
+    .hiding2 {
+        transition: none !important;
     }
 }

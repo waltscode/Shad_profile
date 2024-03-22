@@ -7,7 +7,7 @@ function MyThree() {
   useEffect(() => {
     // Scene
     const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x020817);
+    scene.background = new THREE.Color(0x000000);
 
     // Sizes
     const sizes = {
