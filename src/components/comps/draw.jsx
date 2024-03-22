@@ -32,7 +32,7 @@ export function DrawerDemo() {
           
           <DrawerFooter>
             <Button> 
-            <Link to="https://drive.google.com/file/d/1Oa6hJJ4ep3s8sUDCqObCJ2RFkAFFhPjR/view?usp=sharing">Download</Link>
+            <Link to="https://drive.google.com/file/d/1Oa6hJJ4ep3s8sUDCqObCJ2RFkAFFhPjR/view?usp=sharing" target='_blank'>Download</Link>
               </Button>
             <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
