@@ -23,8 +23,8 @@ export function Contact() {
         <div className='col-span-1'>
             <Card className="text-left">
                 <CardHeader>
-                    <CardTitle className='text-3xl'>John Walters</CardTitle>
-                    <CardDescription className='text-xl'>Full Stack Web Developer</CardDescription>
+                    <CardTitle className='text-3xl'>STAY TUNED</CardTitle>
+                    <CardDescription className='text-xl'></CardDescription>
                 </CardHeader>
                 <CardContent>
                     {/* Card content */}
@@ -34,8 +34,8 @@ export function Contact() {
         <div className='col-span-1'>
             <Card className="text-left">
                 <CardHeader>
-                    <CardTitle className='text-3xl'>John Walters</CardTitle>
-                    <CardDescription className='text-xl'>Full Stack Web Developer</CardDescription>
+                    <CardTitle className='text-3xl'>links can be found on home page</CardTitle>
+                    <CardDescription className='text-xl'></CardDescription>
                 </CardHeader>
                 <CardContent>
                     {/* Card content */}

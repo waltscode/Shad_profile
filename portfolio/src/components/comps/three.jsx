@@ -40,21 +40,21 @@ function MyThree() {
     // Canvas
     const canvas = refContainer.current;
 
-    // Renderer
+    
     const renderer = new THREE.WebGLRenderer({
         canvas: canvas
     });
     renderer.setSize(sizes.width, sizes.height);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-    // Particles
+    
     const particlesGeometry = new THREE.BufferGeometry();
     const particlesCount = 5000;
 
     const positionArray = new Float32Array(particlesCount * 3);
 
     for (let i = 0; i < particlesCount * 3; i += 3) {
-        const radius = 1; // Adjust the radius of the spherical distribution
+        const radius = 1; 
         const theta = Math.random() * Math.PI * 2;
         const phi = Math.random() * Math.PI;
 
@@ -71,8 +71,8 @@ function MyThree() {
 
     // Materials
     const particlesMaterial = new THREE.PointsMaterial({
-        size: 0.005, // Decrease the size of particles
-        color: new THREE.Color(0x04a0ff) // Adjust the color of particles
+        size: 0.005,
+        color: new THREE.Color(0x04a0ff) 
     });
 
     // Particle system
@@ -94,7 +94,7 @@ function MyThree() {
         const elapsedTime = clock.getElapsedTime();
 
         // Update particles
-        particles.rotation.y = 0.5 * elapsedTime;
+        particles.rotation.y = 0.08 * elapsedTime;
 
         // Render
         renderer.render(scene, camera);
@@ -105,9 +105,9 @@ function MyThree() {
 
     tick();
 
-    // Clean up
+    
     return () => {
-      // Remove event listeners here if needed
+    
     };
   }, []);
 
