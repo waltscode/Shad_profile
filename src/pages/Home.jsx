@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { useTheme } from '../components/ui/theme-provider'
+import { useTheme } from '../components/ui/theme-provider';
+import { Link } from 'react-router-dom';
 import {
     Card,
     CardContent,
@@ -138,8 +139,8 @@ export default function Home() {
                                 <AccordionTrigger>Contact Me</AccordionTrigger>
                                 <AccordionContent>
                                     <ul>
-                                        <li><a href="https://github.com/waltscode">GitHub</a></li>
-                                        <li><a href="www.linkedin.com/in/john-walters-295b63198">LinkedIn</a></li>
+                                        <li><Link to="https://github.com/waltscode">GitHub</Link></li>
+                                        <li><Link to="www.linkedin.com/in/john-walters-295b63198">LinkedIn</Link></li>
                                     </ul>
                                 </AccordionContent>
                             </AccordionItem>

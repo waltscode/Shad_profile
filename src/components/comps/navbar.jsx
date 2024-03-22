@@ -2,51 +2,55 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { DrawerDemo} from './draw';
 import { ModeToggle } from '../ui/mode-toggle';
-import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
-import { Home, IcRoundHome, Menu } from './icons'
+import {  IcRoundHome, Menu } from './icons'
 import { Button } from '../ui/button';
 
 
 
 export function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null);
 
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [menuRef]);
 
     const handleMenuClick = () => {
         setIsOpen(!isOpen);
     };
 
     const handleLinkClick = () => {
-        setIsOpen(false); // Close the menu when a link is clicked
+        setIsOpen(false); 
     };
 
-
     return (
-        <nav className="bg-primary shadow w-full fixed z-40 top-0">
-            <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="bg-primary shadow w-full fixed z-40 top-0 sm:w-full">
+            <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 ">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <Button className='home-icon'>
                             <Link to="/">
-
                                 <IcRoundHome />
-
-
                             </Link>
                         </Button>
                     </div>
                     <div className="flex items-center space-x-4">
-
                         <ModeToggle />
                         <DrawerDemo />
-
                     </div>
-                   
                     <Button>
                         <div className="md:block">
                             <div className="ml-4 flex items-center">
-
-                                <div className="relative ml-3">
+                                <div className="relative ml-3" ref={menuRef}>
                                     <Menu
                                         className="bg-primary p-1 rounded-full  hover:text-white focus:outline-none focus:ring focus:ring-white home-icon"
                                         onClick={handleMenuClick}
@@ -70,15 +74,11 @@ export function Navbar() {
                                                     <img src="/images/profile-icon.png" alt="Resume Icon" className="small-avatar" />
                                                     <span className="ml-2">About Me</span>
                                                 </Link>
-
                                                 <Link to="/contact" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" onClick={handleLinkClick}>
                                                     <img src="/images/contact.png" alt="Contact Icon" className="small-avatar" />
                                                     <span className="ml-2">Contact</span>
                                                 </Link>
-                                                <Link to="#" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" onClick={handleLinkClick}>
-                                                    <img src="/images/resume.png" alt="Resume Icon" className="small-avatar" />
-                                                    <span className="ml-2">Resume</span>
-                                                </Link>
+                                               
                                             </div>
                                         </div>
                                     )}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from '../components/ui/button';
+import { Link } from 'react-router-dom';
 
 import {
     Card,
@@ -181,7 +182,7 @@ export default function Portfolio() {
                     <CardFooter className="flex justify-center">
                     <Button>
                         <div className="px-6 py-4">
-                            <a href={featuredProject.link} target='_blank' >View Project</a>
+                            <Link to={featuredProject.link} target='_blank' >View Project</Link>
                         </div>
                         </Button>
                     </CardFooter>
@@ -190,7 +191,7 @@ export default function Portfolio() {
             </div>
             {/* Container for other projects */}
             <div className="w-full md:w-1/2 px-4">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {projects.map(project => (
                         <div key={project.id}>
                             <Card className="text-center p-0" style={{ height: "200px" }}>

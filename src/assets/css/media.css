@@ -36,6 +36,7 @@
 @media screen and (max-width: 768px) {
     .hiding,
     .hiding2 {
-        transition: none !important;
+        transition: none ;
     }
 }
+
