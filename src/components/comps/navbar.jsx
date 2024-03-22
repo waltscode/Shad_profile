@@ -34,7 +34,7 @@ export function Navbar() {
 
     return (
         <nav className="bg-primary shadow w-full fixed z-40 top-0 sm:w-full">
-            <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div className="max-w-full mx-full px-4 sm:px-6 lg:px-8 ">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <Button className='home-icon'>
@@ -48,11 +48,11 @@ export function Navbar() {
                         <DrawerDemo />
                     </div>
                     <Button>
-                        <div className="md:block">
-                            <div className="ml-4 flex items-center">
-                                <div className="relative ml-3" ref={menuRef}>
+                        <div className="">
+                            <div className="ml-1 flex items-center">
+                                <div className="relative " ref={menuRef}>
                                     <Menu
-                                        className="bg-primary p-1 rounded-full  hover:text-white focus:outline-none focus:ring focus:ring-white home-icon"
+                                        className="bg-primary  rounded-full  hover:text-white focus:outline-none focus:ring focus:ring-white home-icon"
                                         onClick={handleMenuClick}
                                     >
                                         <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -43,3 +43,20 @@
 .resume-btn{
     width: 100%;
 }
+
+@media (max-width: 640px) {
+    .navbar {
+      width: 100vw; 
+      left: 0; 
+      right: 0; 
+    }
+  }
+
+  @media (max-width: 640px) {
+    .navbar-button {
+      /* Adjust the size of buttons for small screens */
+      padding: 0.5rem 1rem; /* Example padding */
+      font-size: 0.875rem;
+      width: -25; /* Example font size */
+    }
+  }
