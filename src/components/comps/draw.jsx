@@ -1,5 +1,5 @@
 import * as React from "react"
-import {Resume} from './icons'
+import { Resume } from './icons'
 import { Link } from "react-router-dom"
 
 
@@ -29,11 +29,11 @@ export function DrawerDemo() {
             <DrawerTitle>Would you like to download my resume?</DrawerTitle>
             <DrawerDescription>Click the link below! It will take you to my google docs link.</DrawerDescription>
           </DrawerHeader>
-          
+
           <DrawerFooter>
-            <Button> 
-            <Link to="https://drive.google.com/file/d/1Oa6hJJ4ep3s8sUDCqObCJ2RFkAFFhPjR/view?usp=sharing" target='_blank'>Download</Link>
-              </Button>
+            <Link to="https://drive.google.com/file/d/1Oa6hJJ4ep3s8sUDCqObCJ2RFkAFFhPjR/view?usp=sharing" target='_blank'>
+              <Button className='resume-btn'>Download</Button>
+            </Link>
             <DrawerClose asChild>
               <Button variant="outline">Cancel</Button>
             </DrawerClose>
