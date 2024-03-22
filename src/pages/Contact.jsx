@@ -14,11 +14,12 @@ import {
     AccordionItem,
     AccordionTrigger
 } from '../components/ui/accordion'
+import Footer from '@/components/comps/footer';
 
 export function Contact() {
 
     return (
-        <div id='contact' className={`app-container md:mr-20 md:ml-20 md:mb-20`}>
+        <div id='contact' className={`app-container md:mr-20 md:ml-20 md:mb-20 h-screen`}>
     <div className='grid grid-cols-6 contact-top'>
         <div className='col-span-1'>
             <Card className="text-left">
@@ -46,6 +47,7 @@ export function Contact() {
        
     </div>
     <MyThree />
+   
 </div>
     );
 }

@@ -7,7 +7,7 @@ export function AboutMe() {
     return (
         <div id="about">
             
-            <div className="app-container md:mr-20 md:ml-20 md:mb-20">
+            <div className="app-container md:mr-20 md:ml-20 md:mb-20 h-screen">
                 <div className="grid grid-cols-6 contact-top">
                     <div className="col-span-1">
                         <Card className="text-left">
