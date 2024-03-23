@@ -34,23 +34,23 @@ export function Navbar() {
 
     return (
         <nav className="bg-primary shadow w-full fixed z-40 top-0 sm:w-full">
-            <div className="max-w-full mx-full px-4 sm:px-6 lg:px-8 ">
-                <div className="flex items-center justify-between h-16">
-                    <div className="flex items-center">
+            <div className="max-w-full sm:mx-full px-4 sm:px-6 lg:px-8 ">
+                <div className="flex items-center md:justify-between h-16">
+                    <div className="flex items-center mr-1 ">
                         <Button className='home-icon'>
                             <Link to="/">
                                 <IcRoundHome />
                             </Link>
                         </Button>
                     </div>
-                    <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-4 ml-2">
                         <ModeToggle />
                         <DrawerDemo />
                     </div>
                     <Button>
                         <div className="">
-                            <div className="ml-1 flex items-center">
-                                <div className="relative " ref={menuRef}>
+                            <div className="ml-2 flex items-center">
+                                <div className="relative ml-1" ref={menuRef}>
                                     <Menu
                                         className="bg-primary  rounded-full  hover:text-white focus:outline-none focus:ring focus:ring-white home-icon"
                                         onClick={handleMenuClick}

@@ -85,7 +85,7 @@ export default function Home() {
     return (
         <div id="about" className={`app-container   md:mr-20 md:ml-20 md:mb-20 ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
 
-            <div className="grid sm:w-full md:grid-cols-2 gap-4 hiding2 md:mt-0  md:h-screen ">
+            <div className="grid  md:grid-cols-2 gap-4 hiding2 md:mt-0  md:h-screen ">
                 <div className="flex justify-center items-center mb-20 ">
                     <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
                 </div>
