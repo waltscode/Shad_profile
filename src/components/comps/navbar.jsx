@@ -1,93 +1,100 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { DrawerDemo} from './draw';
-import { ModeToggle } from '../ui/mode-toggle';
-import {  IcRoundHome, Menu } from './icons'
-import { Button } from '../ui/button';
 
+import { Fragment } from 'react'
+import { Link } from 'react-router-dom'
+import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { DrawerDemo } from './draw'
+import { ModeToggle } from '../ui/mode-toggle';
+
+
+const navigation = [
+    
+    { name: 'About Me', href: '/about', current: false },
+    { name: 'Projects', href: '/portfolio', current: false },
+    { name: 'Contact Me', href: '/contact', current: false },
+  ]
+  
+  function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+  }
 
 
 export function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-    const menuRef = useRef(null);
-
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (menuRef.current && !menuRef.current.contains(event.target)) {
-                setIsOpen(false);
-            }
-        }
-
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [menuRef]);
-
-    const handleMenuClick = () => {
-        setIsOpen(!isOpen);
-    };
-
-    const handleLinkClick = () => {
-        setIsOpen(false); 
-    };
+ 
 
     return (
-        <nav className="bg-primary shadow w-full fixed z-40 top-0 sm:w-full">
-            <div className="max-w-full sm:mx-full px-4 sm:px-6 lg:px-8 ">
-                <div className="flex items-center md:justify-between h-16">
-                    <div className="flex items-center mr-1 ">
-                        <Button className='home-icon'>
-                            <Link to="/">
-                                <IcRoundHome />
-                            </Link>
-                        </Button>
+        <Disclosure as="nav" className="bg-primary">
+          {({ open }) => (
+            <>
+              <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div className="relative flex h-16 items-center justify-between">
+                  <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    {/* Mobile menu button*/}
+                    <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-slate-950 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                      <span className="absolute -inset-0.5" />
+                      <span className="sr-only">Open main menu</span>
+                      {open ? (
+                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                      ) : (
+                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                      )}
+                    </Disclosure.Button>
+                  </div>
+                  <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div className="flex flex-shrink-0 items-center navi-icon text-gray-300 px-3 py-2 text-sm font-medium">
+                    <h2><Link to="/">John Walters</Link></h2>
                     </div>
-                    <div className="flex items-center space-x-4 ml-2">
+                    <div className="hidden sm:ml-6 sm:block">
+                      <div className="flex space-x-4">
+                       
+                        {navigation.map((item) => (
+                          <Link
+                            key={item.name}
+                            to ={item.href}
+                            className={classNames(
+                              item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-primary hover:text-white',
+                              'rounded-md px-3 py-2 text-sm font-medium'
+                            )}
+                            aria-current={item.current ? 'page' : undefined}
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </div>
+
+                    </div>
+                  </div>
+                  <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    
+                  
                         <ModeToggle />
-                        <DrawerDemo />
-                    </div>
-                    <Button>
-                        <div className="">
-                            <div className="ml-2 flex items-center">
-                                <div className="relative ml-1" ref={menuRef}>
-                                    <Menu
-                                        className="bg-primary  rounded-full  hover:text-white focus:outline-none focus:ring focus:ring-white home-icon"
-                                        onClick={handleMenuClick}
-                                    >
-                                        <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            {isOpen ? (
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                            ) : (
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-                                            )}
-                                        </svg>
-                                    </Menu>
-                                    {isOpen && (
-                                        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
-                                            <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                                                <Link to="/portfolio" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" onClick={handleLinkClick}>
-                                                    <img src="/images/folder.png" alt="Folder Icon" className="small-avatar" />
-                                                    <span className="ml-2">Portfolio</span>
-                                                </Link>
-                                                <Link to="/about" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" onClick={handleLinkClick}>
-                                                    <img src="/images/profile-icon.png" alt="Resume Icon" className="small-avatar" />
-                                                    <span className="ml-2">About Me</span>
-                                                </Link>
-                                                <Link to="/contact" className="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem" onClick={handleLinkClick}>
-                                                    <img src="/images/contact.png" alt="Contact Icon" className="small-avatar" />
-                                                    <span className="ml-2">Contact</span>
-                                                </Link>
-                                               
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-                    </Button>
+                       
+                    
+                    <DrawerDemo />
+                  </div>
                 </div>
-            </div>
-        </nav>
-    );
-}
+              </div>
+    
+              <Disclosure.Panel className="sm:hidden">
+                <div className="space-y-1 px-2 pb-3 pt-2">
+                  {navigation.map((item) => (
+                    <Disclosure.Button
+                      key={item.name}
+                      as="a"
+                      href={item.href}
+                      className={classNames(
+                        item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                        'block rounded-md px-3 py-2 text-base font-medium'
+                      )}
+                      aria-current={item.current ? 'page' : undefined}
+                    >
+                      {item.name}
+                    </Disclosure.Button>
+                  ))}
+                </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+      )
+    }
