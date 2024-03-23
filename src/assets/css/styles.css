@@ -127,14 +127,12 @@ rgba(249, 115, 22, 1) orange
  */
 
  .navi-icon{
-    
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white, 0 0 30px white, 0 0 35px white;
+    color: hsl(var(--primary));
     
  }
 
- .navi-icon:hover {
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px white, 0 0 25px white, 0 0 30px white, 0 0 35px white;
-    color: hsl(var(--primary));
-}
+
 
  .home-icon{
     text-decoration: none;
