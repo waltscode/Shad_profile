@@ -21,6 +21,7 @@ import {
     HoverCardContent,
     HoverCardTrigger,
 } from '../components/ui/hover-card';
+import { TextX } from '../components/comps/text-change';
 
 
 export default function Home() {
@@ -86,8 +87,13 @@ export default function Home() {
         <div id="about" className={`app-container   md:mr-20 md:ml-20 md:mb-20 ${theme === 'dark' ? 'dark-theme' : 'light-theme'}`}>
 
             <div className="grid  md:grid-cols-2 gap-4 hiding2 md:mt-0  md:h-screen ">
-                <div className="flex justify-center items-center mb-20 ">
-                    <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
+                <div className='hero'>
+                    <div className="items-center sm:mb-6 md:mb-20">
+                        <TextX />
+                    </div>
+                    <div className="flex justify-center items-top ">
+                        <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
+                    </div>
                 </div>
 
                 <Card className="text-left  md:m-36  " style={{ borderColor: 'hsl(var(--primary))' }}>
@@ -112,9 +118,9 @@ export default function Home() {
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-3">
-                                <AccordionTrigger>Explore</AccordionTrigger>
+                                <AccordionTrigger>My Stack</AccordionTrigger>
                                 <AccordionContent>
-                                    <p>Have fun exploring my portfolio! 😃</p>
+                                    <p>Efficiently versed in the MERN stack. 😃</p>
 
                                 </AccordionContent>
                             </AccordionItem>
@@ -362,7 +368,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8"> 
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                 <div className="flex justify-center items-start">
                     <Card className="hiding2 m-4 text-left w-full sm:w-auto md:w-2/3 lg:w-2/3 xl:w-2/3" style={{ borderColor: 'hsl(var(--primary))' }}>
                         <CardHeader>

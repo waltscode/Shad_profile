@@ -27,6 +27,7 @@ body {
     overflow-x: hidden
 }
 
+
 .orng {
     color: var(--orange);
 }
@@ -79,6 +80,7 @@ canvas{
 
 .blob-effect {
     height: 480px;
+    margin-left: 130px;
     background-size: cover;
     background-position: center center;
     box-shadow: 5px 5px 5px 5px hsl(var(--primary));
