@@ -3,41 +3,50 @@ import gsap from 'gsap'
 
 
 
-export function TextX()  {
-
+export function TextX() {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
+    const [cycleComplete, setCycleComplete] = useState(false);
     const words = ['Discover.', 'Innovate.', 'Build.'];
-
-    const changeWord = () => {
-        // Animate the old word to move up and fade out
-        gsap.to('.word', {
-            duration: 0.5,
-            y: -20,
-            opacity: 0,
-            onComplete: () => {
-
-                setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-
-                document.querySelector('.word').textContent = words[currentWordIndex];
-
-                gsap.set('.word', { y: 20 });
-                // Animate the new word to move in from the bottom and fade in
-                gsap.to('.word', { duration: 0.5, y: 0, opacity: 1 });
-            },
-        });
+    const wordRef = useRef(null);
+  
+    const changeWord = (nextIndex) => {
+      gsap.to(wordRef.current, {
+        duration: 0.5,
+        y: -20,
+        opacity: 0,
+        onComplete: () => {
+          setCurrentWordIndex(nextIndex);
+          gsap.set(wordRef.current, { textContent: words[nextIndex] });
+          gsap.set(wordRef.current, { y: 20 });
+          gsap.to(wordRef.current, { duration: 0.5, y: 0, opacity: 1 });
+        },
+      });
     };
-
+  
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        const nextIndex = (currentWordIndex + 1) % words.length;
+        if (nextIndex === 0) {
+          setTimeout(() => changeWord(nextIndex), 60000); 
+        } else {
+          changeWord(nextIndex); 
+        }
+      }, 5000); // Initial timeout
+      return () => clearTimeout(timer); 
+    }, [currentWordIndex, words]);
+  
     return (
-        <div className="container-txt ">
-            <div className="text-container txt">
-                <h1>Together, we will </h1>
-            </div>
-            <div className="word-container">
-                <h1><span className="word" onClick={changeWord}>
-                    {words[currentWordIndex]}
-                </span></h1>
-            </div>
+      <div className="container-txt ">
+        <div className="text-container txt">
+          <h1>Together, we will </h1>
         </div>
+        <div className="word-container">
+          <h1>
+            <span className={`word ${currentWordIndex === 0 ? 'first-word' : (currentWordIndex === 1 ? 'second-word' : (currentWordIndex === 2 ? 'third-word' : ''))}`} ref={wordRef}>
+              {words[currentWordIndex]}
+            </span>
+          </h1>
+        </div>
+      </div>
     );
-};
-
+  };

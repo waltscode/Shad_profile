@@ -32,7 +32,7 @@
   
   }
   .word:hover {
-    color: red; 
+    color: peachpuff;
     cursor: pointer;
   }
 
@@ -42,15 +42,15 @@
 
   @media (max-width: 768px) {
     #word {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; 
     }
 
     .txt {
-        font-size: 45px; /* Adjust font size for smaller screens */
+        font-size: 45px; 
     }
 
     .word {
-        font-size: 45px; /* Adjust font size for smaller screens */
+        font-size: 45px; 
     }
 }
 
@@ -65,4 +65,15 @@
   .hero{
     margin-top: 20px;
   }
+  .third-word {
+    margin-left: 60px; 
+  }
+  .first-word {
+    margin-left: -15px; 
+  }
+  
+  .second-word {
+    margin-left: -17px; 
+  }
 }
+
