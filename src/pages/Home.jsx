@@ -92,7 +92,7 @@ export default function Home() {
                         <TextX />
                     </div>
                     <div className="flex justify-center items-top ">
-                        <img src="/images/blue2.png" alt="profile picture" className="blob-effect" />
+                        <img src="/images/DSC_9323.JPG" alt="profile picture" className="blob-effect" />
                     </div>
                 </div>
 
