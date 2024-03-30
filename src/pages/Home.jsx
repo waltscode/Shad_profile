@@ -120,7 +120,13 @@ export default function Home() {
                             <AccordionItem value="item-3">
                                 <AccordionTrigger>My Stack</AccordionTrigger>
                                 <AccordionContent>
-                                    <p>Efficiently versed in the MERN stack. 😃</p>
+                                    <p className='mb-2'>Efficiently versed in the MERN stack. </p>
+                                    <ul className='list-disc pl-3.5'>
+                                        <li><span style={{ color: 'hsl(var(--primary))' }}>M</span>ongoDB/MySql</li>
+                                        <li><span style={{ color: 'hsl(var(--primary))' }}>E</span>xpress.js</li>
+                                        <li><span style={{ color: 'hsl(var(--primary))' }}>R</span>eact.js</li>
+                                        <li><span style={{ color: 'hsl(var(--primary))' }}>N</span>ode.js</li>
+                                    </ul>
 
                                 </AccordionContent>
                             </AccordionItem>
@@ -137,6 +143,8 @@ export default function Home() {
                                         <li>Vite</li>
                                         <li>Node.js</li>
                                         <li>JavaScript</li>
+                                        <li>Dat.gui</li>
+                                        <li>Gsap</li>
                                         <li>Netlify</li>
                                     </ul>
                                 </AccordionContent>
@@ -146,6 +154,7 @@ export default function Home() {
                                 <AccordionContent>
                                     <ul>
                                         <li><Link to="https://github.com/waltscode">GitHub</Link></li>
+
                                         <li><Link to="www.linkedin.com/in/john-walters-295b63198">LinkedIn</Link></li>
                                     </ul>
                                 </AccordionContent>
@@ -344,7 +353,7 @@ export default function Home() {
                             <p>Front-end development involves working on the client-side of web applications, focusing on user interface, interactions, and user experience.</p>
                             <Accordion type="single" collapsible className="w-full">
                                 <AccordionItem value="item-1">
-                                    <AccordionTrigger>Short summary of front-end technologies:</AccordionTrigger>
+                                    <AccordionTrigger>Short summary of front-end technologies I use:</AccordionTrigger>
                                     <AccordionContent>
                                         <ul className='list-disc'>
                                             <li><strong>HTML5</strong></li>
@@ -378,7 +387,7 @@ export default function Home() {
                             <p>Back-end development involves working on the server-side of web applications, handling data storage, processing, and communication with the front end.</p>
                             <Accordion type="single" collapsible className="w-full">
                                 <AccordionItem value="item-1">
-                                    <AccordionTrigger>Short summary of some key back-end technologies:</AccordionTrigger>
+                                    <AccordionTrigger>Short summary of back-end technologies I use:</AccordionTrigger>
                                     <AccordionContent>
                                         <ul className='list-disc'>
                                             <li><strong>MySQL</strong></li>

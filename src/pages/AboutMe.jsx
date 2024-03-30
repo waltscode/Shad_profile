@@ -23,9 +23,9 @@ export function AboutMe() {
                     </div>
 
                     <div className="col-span-1 m-3 ">
-                        <Card className="text-left mb-3" style={{ borderColor: 'hsl(var(--primary))' }}>
+                        <Card className="text-left mb-2" style={{ borderColor: 'hsl(var(--primary))' }}>
                             <CardHeader>
-                                <CardTitle className="text-3xl">Thankyou for visiting my portfolio!</CardTitle>
+                                <CardTitle className="text-3xl">Thank you for visiting my portfolio!</CardTitle>
 
                             </CardHeader>
                             <CardContent>
@@ -46,7 +46,7 @@ export function AboutMe() {
                                     <li>Sole internal helpdesk for the entire bank, supporting diverse departments.</li>
                                     <li>Skilled agent training new recruits.</li>
                                     <li>Proficient in remote client computer control and timely issue resolution.</li>
-                                    <li>Large-scale outage reporting using service now</li>
+                                    <li>Large-scale outage reporting using ServiceNow</li>
                                     <li>Proficient diagnosing and troubleshooting Microsoft OS and an extensive range of software</li>
                                     <li>Skilled in Cisco tools both soft-phones and hard-phones.</li>
                                     <li>Daily use of Active Roles for account provisioning and ServiceNow for ticketing.</li>

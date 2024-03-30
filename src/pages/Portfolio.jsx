@@ -169,7 +169,7 @@ export default function Portfolio() {
         <div id='portfolio' className={`app-container md:m-20 flex flex-wrap`}>
             {/* Container for featured project */}
             <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
-                <Card className="">
+                <Card className="" style={{ borderColor: 'hsl(var(--primary))' }}>
                     <CardHeader>
                         <CardTitle>{featuredProject.name}</CardTitle>
                     </CardHeader>
@@ -194,7 +194,7 @@ export default function Portfolio() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {projects.map(project => (
                         <div key={project.id}>
-                            <Card className="text-center p-0" style={{ height: "200px" }}>
+                            <Card className="text-center p-0" style={{ height: "200px", borderColor: 'hsl(var(--primary))' }}>
                                 <CardHeader>
                                     <CardTitle className='text-xl'>{project.name}</CardTitle>
                                     
