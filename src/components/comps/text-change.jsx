@@ -31,7 +31,7 @@ export function TextX() {
         } else {
           changeWord(nextIndex); 
         }
-      }, 5000); // Initial timeout
+      }, 3000); // Initial timeout
       return () => clearTimeout(timer); 
     }, [currentWordIndex, words]);
   
