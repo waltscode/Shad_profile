@@ -9,9 +9,11 @@ import { ModeToggle } from '../ui/mode-toggle';
 
 const navigation = [
     { name: 'Dashboard', href: '/', current: true },
-    { name: 'About Me', href: '/about', current: false },
+    { name: 'Cyber Security', href: '/contact', current: false },
     { name: 'Projects', href: '/portfolio', current: false },
-    { name: 'Contact Me', href: '/contact', current: false },
+    { name: 'About Me', href: '/about', current: false },
+    
+    
 ]
 
 function classNames(...classes) {

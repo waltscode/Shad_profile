@@ -10,6 +10,7 @@ import '../src/assets/css/media.css'
 import '../src/assets/css/gradient.css'
 import '../src/assets/css/text.css'
 import'../src/assets/css/themes.css'
+import '../src/assets/css/cyber.css'
 
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
