@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import {Button} from './components/ui/button'
 import {Navbar} from './components/comps/navbar'
 import { ThemeProvider } from './components/ui/theme-provider'
@@ -9,7 +9,8 @@ import { ModeToggle } from './components/ui/mode-toggle'
 
 
 function App() {
-
+  const location = useLocation();
+  const isContactPage = location.pathname === '/contact';
 
   return (
     <>
@@ -18,7 +19,7 @@ function App() {
     <main>
       <Outlet />
    </main>
-   <Footer />
+   {!isContactPage && <Footer />}
 </ThemeProvider>
   </>
 );

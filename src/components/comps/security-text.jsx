@@ -36,11 +36,11 @@ export function TextSecurity() {
     }, [currentWordIndex, words]);
   
     return (
-      <div className="container-txt ">
+      <div className="container-txt-cyber ">
         <div className="text-container txt">
           <h1>Connected, our world is </h1>
         </div>
-        <div className="word-container">
+        <div className="word-container-cyber">
           <h1>
             <span className={`word ${currentWordIndex === 0 ? 'first-word' : (currentWordIndex === 1 ? 'second-word' : (currentWordIndex === 2 ? 'third-word' : ''))}`} ref={wordRef}>
               {words[currentWordIndex]}
