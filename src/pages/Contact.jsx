@@ -61,7 +61,7 @@ export function Contact() {
 
                 <div className='col-span-1 sm:col-span-2  sm:col-start-2'>
                     <div className="flex justify-center items-top">
-                        <img src="/images/computer-blurred.png" alt="profile picture" className='portrait-frame' />
+                        <img src="/images/comp-blur2.png" alt="profile picture" className='portrait-frame' />
                     </div>
                 </div>
                 <Card className='col-span-1 sm:col-span-2  ' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
