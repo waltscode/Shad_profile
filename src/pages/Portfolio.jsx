@@ -10,6 +10,9 @@ import {
     CardHeader,
     CardTitle,
 } from '../components/ui/card';
+import { ScrollArea, ScrollBar } from '../components/ui/scroll-area';
+import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
+import { Label } from '../components/ui/label';
 
 function useIntersectionObserver(selector, options, callback) {
     useEffect(() => {
@@ -43,6 +46,13 @@ export default function Portfolio() {
         target.classList.add('visible');
     });
     const projects = [
+        {
+            name: 'CookNook',
+            description: 'CookNook is a full-stack web application using a combination of a 3rd party API library(Spoonacular) and a custom built backend MongoDB. Users are able to search for cuisines based on different geographical locations and then save them to their user profile. The recipes are converted and stored in a Mongo Atlas DB cloud server and then displayed on the user profile page. The application is fully functional on all devices and deployed on Render. All UI Design was done by myself and it is still technically a work in progress.. Stay Tuned',
+            link: 'https://cooknook2-0.onrender.com/',
+            image: '/images/cooknookSITE.png'
+
+        },
         {
             name: "Fitzy's Fades",
             description: 'A real online barbershop website that allows users to schedule appointments with specific barbers and choose the type of service they want. The website is still technically a work in progress.. Stay Tuned',
@@ -166,56 +176,103 @@ export default function Portfolio() {
     };
 
     return (
-        <div id='portfolio' className={`app-container md:m-20 flex flex-wrap`}>
+        <div id='portfolio' className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8`}>
             {/* Container for featured project */}
-            <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
+            <div className="grid-span-1 md:col-span-4 md:col-start-2 md:m-20">
+                <h1 className="text-3xl font-bold mb-4">Featured Project</h1>
                 <Card className="" style={{ borderColor: 'hsl(var(--primary))' }}>
                     <CardHeader>
                         <CardTitle>{featuredProject.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <div className="px-6 py-4">
-                            <img src={featuredProject.image} alt={featuredProject.name} className="mb-4 w-full object-fit h-96 " />
+                            <img src={featuredProject.image} alt={featuredProject.name} className="mb-4 w-full md:h-[600px] object-fit h-96 " />
                         </div>
                         <CardDescription>{featuredProject.description}</CardDescription>
                     </CardContent>
                     <CardFooter className="flex justify-center">
-                    <Button>
-                        <div className="px-6 py-4">
-                            <Link to={featuredProject.link} target='_blank' >View Project</Link>
-                        </div>
+                        <Button>
+                            <div className="px-6 py-4">
+                                <Link to={featuredProject.link} target='_blank' >View Project</Link>
+                            </div>
                         </Button>
                     </CardFooter>
 
                 </Card>
             </div>
+
             {/* Container for other projects */}
-            <div className="w-full md:w-1/2 px-4">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {projects.map(project => (
-                        <div key={project.id}>
-                            <Card className="text-center p-0" style={{ height: "200px", borderColor: 'hsl(var(--primary))' }}>
-                                <CardHeader>
-                                    <CardTitle className='text-xl'>{project.name}</CardTitle>
-                                    
-                                </CardHeader>
-                                <CardContent>
-                                    {/* Card content */}
-                                </CardContent>
-                                <CardFooter className="flex justify-center mb-20">
+
+            <div className="col-span-1 md:m-20 flex flex-col items-center">
+                <h1 className="text-3xl font-bold mb-4 md:w-[500px]">Other Projects</h1>
+                <ScrollArea className="md:h-[750px] md:w-[300px] h-[330px] rounded-md border p-4 mr-8" style={{ borderColor: 'hsl(var(--primary))' }}>
+                    <div className="flex flex-col space-y-4">
+                        {projects.map(project => (
+                            <div key={project.id}>
+                                <RadioGroup>
+                                    <Label className='text-xl'>{project.name}</Label>
                                     <Button
                                         href={project.link}
                                         onClick={(event) => handleProjectClick(event, project)}
                                     >
                                         More Details
                                     </Button>
-                                </CardFooter>
-                            </Card>
-                        </div>
-                    ))}
-                </div>
+                                </RadioGroup>
+                            </div>
+                        ))}
+                    </div>
+                </ScrollArea>
             </div>
-        </div>
+
+            <div className="col-span-1 md:m-20 flex flex-col items-center">
+                <h1 className="text-3xl font-bold mb-4 md:w-[500px]">Other Projects</h1>
+                <ScrollArea className="md:h-[750px] md:w-[300px] h-[330px] rounded-md border p-4" style={{ borderColor: 'hsl(var(--primary))' }}>
+                    <RadioGroup>
+                        <Label className='text-xl'>Funky Threads Ecommerce Back-End Demonstration</Label>
+                        <a href='https://youtu.be/-l-WWOJ4HwI' target='_blank' class="youtube-button-link">
+                            <span class="play-icon"></span>
+                            <span class="button-text"></span>
+                        </a>
+
+                    </RadioGroup>
+                    <RadioGroup>
+                        <Label className='text-xl'>Social Networking API - Using Mongoose and Express</Label>
+                        <a href='https://youtu.be/D-0XF7XmPsw' target='_blank' class="youtube-button-link">
+                            <span class="play-icon"></span>
+                            <span class="button-text"></span>
+                        </a>
+
+                    </RadioGroup>
+                    <RadioGroup>
+                        <Label className='text-xl'>Inquirer Department Tool</Label>
+                        <a href='https://youtu.be/nBX-NAe4r4c' target='_blank' class="youtube-button-link">
+                            <span class="play-icon"></span>
+                            <span class="button-text"></span>
+                        </a>
+
+                    </RadioGroup>
+                    <RadioGroup>
+                        <Label className='text-xl'>SVG Image Generator</Label>
+                        <a href='https://youtu.be/rFDLZXHAsYk' target='_blank' class="youtube-button-link">
+                            <span class="play-icon"></span>
+                            <span class="button-text"></span>
+                        </a>
+
+                    </RadioGroup>
+                    <RadioGroup>
+                        <Label className='text-xl'>README Generator</Label>
+                        <a href='https://youtu.be/0R3JbwOWN1U' target='_blank' class="youtube-button-link">
+                            <span class="play-icon"></span>
+                            <span class="button-text"></span>
+                        </a>
+
+                    </RadioGroup>
+                </ScrollArea>
+            </div>
+
+
+        </div >
     );
 
 }
+

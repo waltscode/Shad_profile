@@ -74,3 +74,34 @@
 .cyb-linx:hover {
     color: hsl(var(--primary));
 }
+
+.youtube-button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red color similar to YouTube play button */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.youtube-button-link:hover {
+    background-color: #cc0000; /* Darker red color on hover */
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-image: url('https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-text {
+    margin-left: 10px;
+}

@@ -266,7 +266,7 @@ export function Contact() {
                                     <AccordionItem value="item-4">
                                         <AccordionTrigger className='cyber-hero'>Monitoring and Analysis Tools</AccordionTrigger>
                                         <AccordionContent className='cyber-hero'>
-                                            <ul className="text-left list-inside"> 
+                                            <ul className="text-left list-inside">
                                                 <li>
                                                     <li>Paessler PRTG</li>
                                                 </li>
@@ -337,9 +337,9 @@ export function Contact() {
                 <h2 className='col-span-1 sm:col-span-6 text-center text-2xl font-bold mb-4 mt-5 text-3xl'>Security Projects/Reports</h2>
                 <Card className='col-span-1 sm:col-span-4 sm:col-start-2' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
                     <CardDescription>
-                            <p>All links go to Google Drive shared links to view reports.</p>
-                        </CardDescription>
-                        {/* <Accordion type="single" collapsible className="w-full">
+                        <p>All links go to Google Drive shared links to view reports.</p>
+                    </CardDescription>
+                    {/* <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1">
                                         <AccordionTrigger>Networking Fundamentals</AccordionTrigger>
                                         <AccordionContent>
@@ -392,7 +392,10 @@ export function Contact() {
 
 
                 </Card>
+              
+
             </div>
+
             <MyThree />
 
         </div >
