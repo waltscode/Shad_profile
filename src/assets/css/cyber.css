@@ -16,12 +16,13 @@
 
 @media screen and (max-width: 768px) {
 .container-txt-cyber {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     flex-direction: column;
-    margin-left: 100px;
+    /* margin-left: 100px; */
+    
   }
 
   .word-container-cyber {
@@ -67,19 +68,9 @@
         font-size: 15px;
         margin-top: 10px;
     }
+   
+}
 
-    .container-txt-cyber {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* flex-wrap: wrap;
-        flex-direction: column; */
-        font-size: 20px;
-      }
-    
-      .word-container-cyber {
-        display: flex; 
-        justify-content: flex-start;
-        width: 15px;
-      }
+.cyb-linx:hover {
+    color: hsl(var(--primary));
 }

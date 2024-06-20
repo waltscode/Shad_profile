@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import MyThree from '../components/comps/three'
 import {
     Card,
@@ -52,7 +53,7 @@ export function Contact() {
     }, []);
 
     return (
-        <div id='contact' className={`app-container mr-20 ml-20 mb-20 mt-[-160px] h-screen`}>
+        <div id='contact' className={`app-container mt-[-160px] h-screen`}>
             <div className='grid grid-cols-1 sm:grid-cols-6 contact-top gap-4 hiding'>
                 <div className='col-span-1 sm:col-span-6 pr-0 sm:pr-[250px] items-center'>
                     <TextSecurity />
@@ -180,7 +181,7 @@ export function Contact() {
                                 </HoverCardContent>
                             </HoverCard>
                         </li>
-                        <li>
+                        {/* <li>
                             <HoverCard>
                                 <HoverCardTrigger>
                                     <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
@@ -193,7 +194,7 @@ export function Contact() {
                                     <p>Paessler PRTG</p>
                                 </HoverCardContent>
                             </HoverCard>
-                        </li>
+                        </li> */}
                     </ul>
 
                 </Card>
@@ -359,28 +360,28 @@ export function Contact() {
 
                         <ul>
                             <li>
-                                <a href="https://docs.google.com/document/d/1S_nrPvx8RdJaRv-kp2SWk8RG5uk3ARDvrG5GUEkyeQM/edit?usp=sharing" target="_blank" className=' cyber-hero'>Network Administration</a>
+                                <a href="https://docs.google.com/document/d/1S_nrPvx8RdJaRv-kp2SWk8RG5uk3ARDvrG5GUEkyeQM/edit?usp=sharing" target="_blank" className=' cyber-hero cyb-linx'>Network Administration</a>
                             </li>
                             <li>
-                                <a href="https://docs.google.com/document/d/1q11tz5HIZMJ4lwQsQlZgiupe1attoESJ8StmoGKr8HQ/edit?usp=sharing" target="_blank" className='cyber-hero'>Report on Risk & Vulnerabilities</a>
+                                <a href="https://docs.google.com/document/d/1q11tz5HIZMJ4lwQsQlZgiupe1attoESJ8StmoGKr8HQ/edit?usp=sharing" target="_blank" className='cyber-hero cyb-linx'>Report on Risk & Vulnerabilities</a>
                             </li>
                             <li>
-                                <a href="https://docs.google.com/document/d/1cBO0Z6CBKflXxT0MAp5BRzX-bc6Y_koF1cTfWGuBhLw/edit?usp=sharing" target="_blank" className=' cyber-hero'>Log Monitoring & Workflow</a>
+                                <a href="https://docs.google.com/document/d/1cBO0Z6CBKflXxT0MAp5BRzX-bc6Y_koF1cTfWGuBhLw/edit?usp=sharing" target="_blank" className=' cyber-hero cyb-linx'>Log Monitoring & Workflow</a>
                             </li>
                             <li>
-                                <a href="https://docs.google.com/document/d/1EeYdpWoL7vDB2YavmyCvH6rbFYq8ijCX8uxB_KQHSnI/edit?usp=sharing" target="_blank" className='cyber-hero'>Playbook</a>
+                                <a href="https://docs.google.com/document/d/1EeYdpWoL7vDB2YavmyCvH6rbFYq8ijCX8uxB_KQHSnI/edit?usp=sharing" target="_blank" className='cyber-hero cyb-linx'>Playbook</a>
                             </li>
                             <li>
-                                <a href="https://docs.google.com/document/d/1RCPrSpQd4B_4I8P8Lu0OlcJ-bOJELfh-rEtbhJLL-Uk/edit?usp=sharing" target="_blank" className='cyber-hero'>Risk Management</a>
+                                <a href="https://docs.google.com/document/d/1RCPrSpQd4B_4I8P8Lu0OlcJ-bOJELfh-rEtbhJLL-Uk/edit?usp=sharing" target="_blank" className='cyber-hero cyb-linx'>Risk Management</a>
                             </li>
                             <li>
-                                <a href="https://docs.google.com/document/d/1quM6y14t17ZUR27-eyEJ7oBssR2odyK3HxzUezXhha4/edit?usp=sharing" target="_blank" className='cyber-hero'>Vulnerabilities</a>
+                                <a href="https://docs.google.com/document/d/1quM6y14t17ZUR27-eyEJ7oBssR2odyK3HxzUezXhha4/edit?usp=sharing" target="_blank" className='cyber-hero cyb-linx'>Vulnerabilities</a>
                             </li>
                             <li>
-                                <a href="https://drive.google.com/drive/folders/15dygT5FsnLWj4RhhfHVrLHTAIuGaTyY1?usp=drive_link" target="_blank" className='cyber-hero'>Incident Response and Policies</a>
+                                <a href="https://drive.google.com/drive/folders/15dygT5FsnLWj4RhhfHVrLHTAIuGaTyY1?usp=drive_link" target="_blank" className='cyber-hero cyb-linx'>Incident Response and Policies</a>
                             </li>
                             <li>
-                                <a href="https://docs.google.com/document/d/1fRP6nMBiELla79T2VQZVW0OBZzx_NrJ10BNbJfCCHTo/edit?usp=sharing" target="_blank" className='cyber-hero'>Encryption</a>
+                                <a href="https://docs.google.com/document/d/1fRP6nMBiELla79T2VQZVW0OBZzx_NrJ10BNbJfCCHTo/edit?usp=sharing" target="_blank" className='cyber-hero cyb-linx'>Encryption</a>
                             </li>
                             <li>
                                 <p>More to come..</p>
