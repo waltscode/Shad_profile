@@ -13,7 +13,7 @@ export function AboutMe() {
                         <Card className="text-left m-3" style={{ borderColor: 'hsl(var(--primary))' }}>
                             <CardHeader>
                                 <CardTitle className="text-3xl"></CardTitle>
-                                <img src="images/subway3crop.png" alt="" />
+                                <img src="images/subway3small.png" alt="" />
 
                             </CardHeader>
                             <CardContent>
