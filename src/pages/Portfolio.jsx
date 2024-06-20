@@ -54,6 +54,12 @@ export default function Portfolio() {
 
         },
         {
+            name: 'NHL Fantasy League',
+            description: 'A Complete RESTful API backend of the 2022 NHL Roster and their associated teams. All routes have been created and tested in Insomnia. The database is fully functional and capable of deployment. The database is a MySQL Workbench and the application is built using Sequelize and Express. The application is still technically a work in progress.. Stay Tuned',
+            link: 'https://github.com/waltscode/Hockey_roster_db',
+            image: 'images/NHLroster.png'
+        },
+        {
             name: "Fitzy's Fades",
             description: 'A real online barbershop website that allows users to schedule appointments with specific barbers and choose the type of service they want. The website is still technically a work in progress.. Stay Tuned',
             link: 'https://github.com/waltscode/Fitzys_Fades',
@@ -227,6 +233,14 @@ export default function Portfolio() {
             <div className="md:col-span-2 md:m-4 flex flex-col items-center">
                 <h1 className="text-3xl font-bold mb-4 md:w-[500px]">Youtube Demos</h1>
                 <ScrollArea className="md:h-[750px] md:w-[300px] h-[330px] rounded-md border p-4 " style={{ borderColor: 'hsl(var(--primary))' }}>
+                    <RadioGroup>
+                        <Label className='text-xl'>NHL Roster Fantasy Demo</Label>
+                        <a href='https://youtu.be/v0O6drtdvjE' target='_blank' class="youtube-button-link">
+                            <span class="play-icon"></span>
+                            <span class="button-text"></span>
+                        </a>
+
+                    </RadioGroup>
                     <RadioGroup>
                         <Label className='text-xl'>Funky Threads Ecommerce Back-End Demonstration</Label>
                         <a href='https://youtu.be/-l-WWOJ4HwI' target='_blank' class="youtube-button-link">
