@@ -63,20 +63,24 @@ export function Contact() {
                         <img src="/images/computer-blurred.png" alt="profile picture" className='portrait-frame' />
                     </div>
                 </div>
-                <Card className='col-span-1 sm:col-span-2  '  style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
-                    <CardHeader >
+                <Card className='col-span-1 sm:col-span-2  ' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
+                    <CardHeader className="text-left list-inside">
                         <CardTitle className='text-5xl'>John Walters</CardTitle>
                         <CardDescription className='text-3xl'>Cyber Security Professional</CardDescription>
                     </CardHeader>
-                    <CardContent>
-                        <h1 className='text-2xl'>Welcome to my cyber security page! I am a cyber security professional with a passion for technology and security. I have experience in a variety of security tools and technologies, and I am always looking to learn more. I am currently working on my OSCP certification and I am always looking for new challenges. I am also a big fan of open source software and I am always looking for new ways to contribute to the community. If you have any questions or would like to get in touch, please feel free to reach out to me. I look forward to hearing from you!
+                    <CardContent className="text-left list-inside">
+                        <h1 className='cyber-hero'>
+                            With a wealth of experience in the corporate IT industry and a recent graduate from the esteemed LightHouse Labs Cyber Security Program, I am a dedicated cyber security professional with an unwavering passion for technology and security. My journey in cyber security is driven by a commitment to protecting digital landscapes and ensuring the integrity of critical information systems.
                         </h1>
+                        <h2 className='cyber-subheading'>
+                            My goal is to build on my past experiences and continuously expand my expertise, staying ahead of emerging threats and leveraging innovative solutions to safeguard digital assets. Explore my portfolio to learn more about my work, projects, and the unique value I bring to the cyber security landscape.
+                        </h2>
                     </CardContent>
                 </Card>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-6 hiding '>
                 <h2 className='col-span-1 sm:col-span-6 text-center text-2xl font-bold mb-4 mt-5 text-3xl'>Featured Technology</h2>
-                <Card className='col-span-1 sm:col-span-4 sm:col-start-2 company-icons' style={{ borderColor: 'hsl(var(--primary))' ,opacity: 0.8 }}>
+                <Card className='col-span-1 sm:col-span-4 sm:col-start-2 company-icons' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
                     <ul className="company-icons flex flex-wrap justify-center">
                         <li>
                             <HoverCard>
@@ -199,20 +203,20 @@ export function Contact() {
 
 
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-6 gap-4 hiding2'>
+            <div className='grid grid-cols-1 sm:grid-cols-6 gap-4 hiding2 mt-5'>
                 <div className='col-span-1 sm:col-span-4 sm:col-start-2'>
                     <div className='grid grid-cols-1 sm:grid-cols-4 gap-4'>
                         {/* Card 1: Networking Fundamentals, Network Management and Security, System Logging and Troubleshooting, Monitoring and Analysis Tools */}
-                        <Card className='col-span-1 sm:col-span-2' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8  }}>
+                        <Card className='col-span-1 sm:col-span-2' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
                             <CardHeader>
                                 <CardTitle className='text-3xl'>Core Concepts</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <Accordion type="single" collapsible className="w-full">
                                     <AccordionItem value="item-1">
-                                        <AccordionTrigger>Networking Fundamentals</AccordionTrigger>
-                                        <AccordionContent>
-                                            <ul>
+                                        <AccordionTrigger className='cyber-hero'>Networking Fundamentals</AccordionTrigger>
+                                        <AccordionContent className='cyber-hero'>
+                                            <ul className="text-left list-inside">
                                                 <li>
                                                     <li>Linux Processes</li>
                                                     <li>OSI Layer Models</li>
@@ -225,9 +229,9 @@ export function Contact() {
                                         </AccordionContent>
                                     </AccordionItem>
                                     <AccordionItem value="item-2">
-                                        <AccordionTrigger>Network Management and Security</AccordionTrigger>
-                                        <AccordionContent>
-                                            <ul>
+                                        <AccordionTrigger className='cyber-hero'>Network Management and Security</AccordionTrigger>
+                                        <AccordionContent className='cyber-hero'>
+                                            <ul className="text-left list-inside">
                                                 <li>
                                                     <li>Network Segmentation</li>
                                                     <li>Firewall Technology</li>
@@ -244,9 +248,9 @@ export function Contact() {
                                         </AccordionContent>
                                     </AccordionItem>
                                     <AccordionItem value="item-3">
-                                        <AccordionTrigger>System Logging and Troubleshooting</AccordionTrigger>
-                                        <AccordionContent>
-                                            <ul>
+                                        <AccordionTrigger className='cyber-hero'>System Logging and Troubleshooting</AccordionTrigger>
+                                        <AccordionContent className='cyber-hero'>
+                                            <ul className="text-left list-inside">
                                                 <li>
                                                     <li>Windows Logging</li>
                                                     <li>Linux Logging</li>
@@ -259,9 +263,9 @@ export function Contact() {
                                         </AccordionContent>
                                     </AccordionItem>
                                     <AccordionItem value="item-4">
-                                        <AccordionTrigger>Monitoring and Analysis Tools</AccordionTrigger>
-                                        <AccordionContent>
-                                            <ul>
+                                        <AccordionTrigger className='cyber-hero'>Monitoring and Analysis Tools</AccordionTrigger>
+                                        <AccordionContent className='cyber-hero'>
+                                            <ul className="text-left list-inside"> 
                                                 <li>
                                                     <li>Paessler PRTG</li>
                                                 </li>
@@ -273,16 +277,16 @@ export function Contact() {
                         </Card>
 
                         {/* Card 2: Cybersecurity Principles and Practices, Security Frameworks and Incident Management */}
-                        <Card className='col-span-1 sm:col-span-2' style={{ borderColor: 'hsl(var(--primary))' , opacity: 0.8 }}>
+                        <Card className='col-span-1 sm:col-span-2' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
                             <CardHeader>
                                 <CardTitle className='text-3xl'>Security Practices</CardTitle>
                             </CardHeader>
                             <CardContent>
                                 <Accordion type="single" collapsible className="w-full">
                                     <AccordionItem value="item-1">
-                                        <AccordionTrigger>Cybersecurity Principles and Practices</AccordionTrigger>
-                                        <AccordionContent>
-                                            <ul>
+                                        <AccordionTrigger className='cyber-hero'>Cybersecurity Principles and Practices</AccordionTrigger>
+                                        <AccordionContent className='cyber-hero'>
+                                            <ul className="text-left list-inside">
                                                 <li>
                                                     <li>Risk/Vulnerability Order of Importance</li>
                                                     <li>Threat Landscape</li>
@@ -299,9 +303,9 @@ export function Contact() {
                                         </AccordionContent>
                                     </AccordionItem>
                                     <AccordionItem value="item-2">
-                                        <AccordionTrigger>Security Frameworks and Incident Management</AccordionTrigger>
-                                        <AccordionContent>
-                                            <ul>
+                                        <AccordionTrigger className='cyber-hero'>Security Frameworks and Incident Management</AccordionTrigger>
+                                        <AccordionContent className='cyber-hero'>
+                                            <ul className="text-left list-inside">
                                                 <li>
                                                     <li>Security Frameworks</li>
                                                     <li>Incident Management</li>
@@ -327,6 +331,66 @@ export function Contact() {
                         </Card>
                     </div>
                 </div>
+            </div>
+            <div className='grid grid-cols-1 sm:grid-cols-6 hiding '>
+                <h2 className='col-span-1 sm:col-span-6 text-center text-2xl font-bold mb-4 mt-5 text-3xl'>Security Projects/Reports</h2>
+                <Card className='col-span-1 sm:col-span-4 sm:col-start-2' style={{ borderColor: 'hsl(var(--primary))', opacity: 0.8 }}>
+                    <CardDescription>
+                            <p>All links go to Google Drive shared links to view reports.</p>
+                        </CardDescription>
+                        {/* <Accordion type="single" collapsible className="w-full">
+                        <AccordionItem value="item-1">
+                                        <AccordionTrigger>Networking Fundamentals</AccordionTrigger>
+                                        <AccordionContent>
+                                            <ul>
+                                                <li>
+                                                    <li>Linux Processes</li>
+                                                    <li>OSI Layer Models</li>
+                                                    <li>Packets on the Network</li>
+                                                    <li>IPv4 and IPv6</li>
+                                                    <li>Network vs Broadcast vs Host Addresses</li>
+                                                    <li>ARP, TCP, HTTP, HTTPS, TLS & SSL</li>
+                                                </li>
+                                            </ul>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                            </Accordion> */}
+                    <CardContent>
+
+                        <ul>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1S_nrPvx8RdJaRv-kp2SWk8RG5uk3ARDvrG5GUEkyeQM/edit?usp=sharing" target="_blank" className=' cyber-hero'>Network Administration</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1q11tz5HIZMJ4lwQsQlZgiupe1attoESJ8StmoGKr8HQ/edit?usp=sharing" target="_blank" className='cyber-hero'>Report on Risk & Vulnerabilities</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1cBO0Z6CBKflXxT0MAp5BRzX-bc6Y_koF1cTfWGuBhLw/edit?usp=sharing" target="_blank" className=' cyber-hero'>Log Monitoring & Workflow</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1EeYdpWoL7vDB2YavmyCvH6rbFYq8ijCX8uxB_KQHSnI/edit?usp=sharing" target="_blank" className='cyber-hero'>Playbook</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1RCPrSpQd4B_4I8P8Lu0OlcJ-bOJELfh-rEtbhJLL-Uk/edit?usp=sharing" target="_blank" className='cyber-hero'>Risk Management</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1quM6y14t17ZUR27-eyEJ7oBssR2odyK3HxzUezXhha4/edit?usp=sharing" target="_blank" className='cyber-hero'>Vulnerabilities</a>
+                            </li>
+                            <li>
+                                <a href="https://drive.google.com/drive/folders/15dygT5FsnLWj4RhhfHVrLHTAIuGaTyY1?usp=drive_link" target="_blank" className='cyber-hero'>Incident Response and Policies</a>
+                            </li>
+                            <li>
+                                <a href="https://docs.google.com/document/d/1fRP6nMBiELla79T2VQZVW0OBZzx_NrJ10BNbJfCCHTo/edit?usp=sharing" target="_blank" className='cyber-hero'>Encryption</a>
+                            </li>
+                            <li>
+                                <p>More to come..</p>
+                            </li>
+
+                        </ul>
+                    </CardContent>
+
+
+                </Card>
             </div>
             <MyThree />
 
