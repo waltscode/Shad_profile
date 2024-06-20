@@ -178,7 +178,7 @@ export default function Portfolio() {
     return (
         <div id='portfolio' className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-8`}>
             {/* Container for featured project */}
-            <div className="grid-span-1 md:col-span-4 md:col-start-2 md:m-20">
+            <div className="md:col-span-4 md:m-4">
                 <h1 className="text-3xl font-bold mb-4">Featured Project</h1>
                 <Card className="" style={{ borderColor: 'hsl(var(--primary))' }}>
                     <CardHeader>
@@ -186,7 +186,7 @@ export default function Portfolio() {
                     </CardHeader>
                     <CardContent>
                         <div className="px-6 py-4">
-                            <img src={featuredProject.image} alt={featuredProject.name} className="mb-4 w-full md:h-[600px] object-fit h-96 " />
+                            <img src={featuredProject.image} alt={featuredProject.name} className="mb-4 w-full md:h-[550px] object-fit h-96 " />
                         </div>
                         <CardDescription>{featuredProject.description}</CardDescription>
                     </CardContent>
@@ -203,9 +203,9 @@ export default function Portfolio() {
 
             {/* Container for other projects */}
 
-            <div className="col-span-1 md:m-20 flex flex-col items-center">
+            <div className="md:col-span-2 md:m-4 flex flex-col items-center">
                 <h1 className="text-3xl font-bold mb-4 md:w-[500px]">Other Projects</h1>
-                <ScrollArea className="md:h-[750px] md:w-[300px] h-[330px] rounded-md border p-4 mr-8" style={{ borderColor: 'hsl(var(--primary))' }}>
+                <ScrollArea className="md:h-[750px] md:w-[300px] h-[330px] rounded-md border p-4 " style={{ borderColor: 'hsl(var(--primary))' }}>
                     <div className="flex flex-col space-y-4">
                         {projects.map(project => (
                             <div key={project.id}>
@@ -224,9 +224,9 @@ export default function Portfolio() {
                 </ScrollArea>
             </div>
 
-            <div className="col-span-1 md:m-20 flex flex-col items-center">
-                <h1 className="text-3xl font-bold mb-4 md:w-[500px]">Other Projects</h1>
-                <ScrollArea className="md:h-[750px] md:w-[300px] h-[330px] rounded-md border p-4" style={{ borderColor: 'hsl(var(--primary))' }}>
+            <div className="md:col-span-2 md:m-4 flex flex-col items-center">
+                <h1 className="text-3xl font-bold mb-4 md:w-[500px]">Youtube Demos</h1>
+                <ScrollArea className="md:h-[750px] md:w-[300px] h-[330px] rounded-md border p-4 " style={{ borderColor: 'hsl(var(--primary))' }}>
                     <RadioGroup>
                         <Label className='text-xl'>Funky Threads Ecommerce Back-End Demonstration</Label>
                         <a href='https://youtu.be/-l-WWOJ4HwI' target='_blank' class="youtube-button-link">
