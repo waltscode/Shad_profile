@@ -153,9 +153,12 @@ export default function Home() {
                                 <AccordionTrigger>Contact Me</AccordionTrigger>
                                 <AccordionContent>
                                     <ul>
-                                        <li><Link to="https://github.com/waltscode">GitHub</Link></li>
-
-                                        <li><Link to="www.linkedin.com/in/john-walters-295b63198">LinkedIn</Link></li>
+                                        <li className='cyber-hero cyb-linx'>
+                                            <a href="https://github.com/waltscode" target="_blank" rel="noopener noreferrer">GitHub</a>
+                                        </li>
+                                        <li className='cyber-hero cyb-linx'>
+                                            <a href="https://www.linkedin.com/in/john-walters-295b63198/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                        </li>
                                     </ul>
                                 </AccordionContent>
                             </AccordionItem>
