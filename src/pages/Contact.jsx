@@ -86,7 +86,7 @@ export function Contact() {
                         <li>
                             <HoverCard>
                                 <HoverCardTrigger>
-                                    <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                    <a className='hiding'  style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                         <i style={{ color: 'hsl(var(--primary))' }}>
                                             <Python />
                                         </i>
@@ -100,7 +100,7 @@ export function Contact() {
                         <li>
                             <HoverCard>
                                 <HoverCardTrigger>
-                                    <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                    <a className='hiding' style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                         <i style={{ color: 'hsl(var(--primary))' }}>
                                             <Ubuntu />
                                         </i>
@@ -114,7 +114,7 @@ export function Contact() {
                         <li>
                             <HoverCard>
                                 <HoverCardTrigger>
-                                    <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                    <a className='hiding' style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                         <i style={{ color: 'hsl(var(--primary))' }}>
                                             <Kali />
                                         </i>
@@ -128,7 +128,7 @@ export function Contact() {
                         <li>
                             <HoverCard>
                                 <HoverCardTrigger>
-                                    <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                    <a className='hiding'  style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                         <i style={{ color: 'hsl(var(--primary))' }}>
                                             <Bash />
                                         </i>
@@ -142,7 +142,7 @@ export function Contact() {
                         <li>
                             <HoverCard>
                                 <HoverCardTrigger>
-                                    <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                    <a className='hiding'  style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                         <i style={{ color: 'hsl(var(--primary))' }}>
                                             <Windows />
                                         </i>
@@ -170,7 +170,7 @@ export function Contact() {
                         <li>
                             <HoverCard>
                                 <HoverCardTrigger>
-                                    <a className='hiding' href="#" target="_blank" style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
+                                    <a className='hiding'style={{ boxShadow: '0px 0px 16px -1px hsl(var(--primary))' }}>
                                         <i style={{ color: 'hsl(var(--primary))' }}>
                                             <Wireshark />
                                         </i>
