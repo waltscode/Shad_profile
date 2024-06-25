@@ -31,7 +31,7 @@ export function DrawerDemo() {
           </DrawerHeader>
 
           <DrawerFooter>
-            <Link to="https://drive.google.com/file/d/1Oa6hJJ4ep3s8sUDCqObCJ2RFkAFFhPjR/view?usp=sharing" target='_blank'>
+            <Link to="https://drive.google.com/file/d/158bbUCuacb56iV_jNO2chv38aAOegEG-/view?usp=drive_link" target='_blank'>
               <Button className='resume-btn'>Download</Button>
             </Link>
             <DrawerClose asChild>
